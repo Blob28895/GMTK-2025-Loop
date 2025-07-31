@@ -47,6 +47,7 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
+        Debug.Log("Colliding with something");
         if (other.CompareTag("Player"))
         {
             StartCoroutine(AttackPlayer(other, _damage));
@@ -62,7 +63,7 @@ public class EnemyController : MonoBehaviour
         _passiveNoise.Play();
 
         yield return new WaitForSeconds(_damageFrequency);
-
+        Debug.Log("Attacking player");
         _damageEffect.SetActive(false);
     }
 
