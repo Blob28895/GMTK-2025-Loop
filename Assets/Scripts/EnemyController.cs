@@ -7,7 +7,6 @@ using Unity.VisualScripting;
 public class EnemyController : MonoBehaviour
 {
     private Transform _targetPosition;
-    private Animator _animator;
     private Rigidbody2D _rb;
 
     [Header("Damage Settings")]
@@ -16,11 +15,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private GameObject _damageEffect = default;
 
     [Header("Layer Settings")]
-
-    [Tooltip("This is all layers that the mouse will define as the ground")]
-    [SerializeField] private LayerMask ground;
-
-    [SerializeField] private Collider2D _walkingCollider;
+    [SerializeField] private Collider2D _collider;
 
     [Header("Speeds")]
     [SerializeField] private float walkingSpeed = 1f;
@@ -34,7 +29,6 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         _targetPosition = GameObject.FindGameObjectWithTag("Player").transform;
-        _animator = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
         _passiveNoise = GetComponent<AudioSource>();
     }
@@ -47,18 +41,6 @@ public class EnemyController : MonoBehaviour
 
     private void walk(Vector3 dir)
     {
-        if (Math.Abs(dir.x) < 0.05f) { return; }
-        if (dir.x < 0f)
-        {
-            dir.x = -1;
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-        else
-        {
-            dir.x = 1;
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
-
         _rb.MovePosition(_rb.position + new Vector2(dir.x, 0) * walkingSpeed * Time.deltaTime);
     }
 
@@ -82,7 +64,6 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSeconds(_damageFrequency);
 
         _damageEffect.SetActive(false);
-        StartCoroutine(playerHealth.AttemptToRegen());
     }
 
     public void Die()
