@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] public HealthSO health;
 	[SerializeField] private InputReaderSO _inputReader = default;
-	[SerializeField] private SpriteRenderer _spriteRenderer = default;
+	 private SpriteRenderer _spriteRenderer = default;
 
 	public int speed = 5;
 	private bool canMove = true;
