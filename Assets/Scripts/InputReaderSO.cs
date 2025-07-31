@@ -36,6 +36,12 @@ public class InputReaderSO : ScriptableObject, InputSystem_Actions.IPlayerAction
 
     // --- Event Listeners ---
     public void OnMove(InputAction.CallbackContext context) { RunEvent.Invoke(context.ReadValue<Vector2>()); }
-    public void OnLook(InputAction.CallbackContext context) { LookEvent.Invoke(context.ReadValue<Vector2>()); }
+    public void OnLook(InputAction.CallbackContext context) { 
+        
+        if(context.performed)
+        {
+            LookEvent.Invoke(context.ReadValue<Vector2>());
+        }
+    }
     public void OnAttack(InputAction.CallbackContext context) { AttackEvent.Invoke();  }
 }

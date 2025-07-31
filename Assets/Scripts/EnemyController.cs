@@ -47,7 +47,6 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log("Colliding with something");
         if (other.CompareTag("Player"))
         {
             StartCoroutine(AttackPlayer(other, _damage));
