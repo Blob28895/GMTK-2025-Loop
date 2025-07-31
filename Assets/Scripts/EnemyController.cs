@@ -12,7 +12,7 @@ public class EnemyController : MonoBehaviour
     [Header("Damage Settings")]
     [SerializeField] private float _damageFrequency = 1f;
     [SerializeField] private int _damage = 1;
-    [SerializeField] private GameObject _damageEffect = default;
+    //[SerializeField] private GameObject _damageEffect = default;
 
     [Header("Layer Settings")]
     [SerializeField] private Collider2D _collider;
@@ -20,17 +20,17 @@ public class EnemyController : MonoBehaviour
     [Header("Speeds")]
     [SerializeField] private float walkingSpeed = 1f;
 
-    [Header("Audio")]
-    [SerializeField] private AudioSource _passiveNoise;
-    [Tooltip("Object that will spawn to play the enemy death noise when an enemy dies. Since it cant be playing a sound while also destroying itself")]
-    [SerializeField] private GameObject _deathSoundObject;
+    //[Header("Audio")]
+    // [SerializeField] private AudioSource _passiveNoise;
+    //[Tooltip("Object that will spawn to play the enemy death noise when an enemy dies. Since it cant be playing a sound while also destroying itself")]
+    //[SerializeField] private GameObject _deathSoundObject;
 
 
     void Start()
     {
         _targetPosition = GameObject.FindGameObjectWithTag("Player").transform;
         _rb = GetComponent<Rigidbody2D>();
-        _passiveNoise = GetComponent<AudioSource>();
+        // _passiveNoise = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -56,20 +56,20 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator AttackPlayer(Collider2D playerCollider, int damage)
     {
-        _damageEffect.SetActive(true);
+        //_damageEffect.SetActive(true);
 
         HealthSO playerHealth = playerCollider.GetComponent<PlayerController>().health;
         playerHealth.Damage(_damage);
-        _passiveNoise.Play();
+        // _passiveNoise.Play();
 
         yield return new WaitForSeconds(_damageFrequency);
         Debug.Log("Attacking player");
-        _damageEffect.SetActive(false);
+        //_damageEffect.SetActive(false);
     }
 
     public void Die()
     {
-        Instantiate(_deathSoundObject);
+        // Instantiate(_deathSoundObject);
         Destroy(gameObject);
     }
 }
