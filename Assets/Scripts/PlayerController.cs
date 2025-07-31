@@ -4,10 +4,14 @@ using System;
 using System.Text.RegularExpressions;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using Unity.VisualScripting;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] public HealthSO health;
+	[SerializeField] private InputReaderSO _inputReader = default;
+	[SerializeField] private SpriteRenderer _spriteRenderer = default;
+
 	public int speed = 5;
 	private bool canMove = true;
 
@@ -17,17 +21,20 @@ public class PlayerController : MonoBehaviour
 	private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 	private Vector2 lastDirectionFacing = Vector2.zero;
 
+
+	private Vector2 _inputVector;
 	//private AudioManager audioManager;
 
 
-	void Start()
+	void Awake()	
 	{
 		rb = GetComponent<Rigidbody2D>();
+		_spriteRenderer = GetComponent<SpriteRenderer>();
+		_inputReader.EnableGameplayInput();
 		//audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
 
 		//nextLevelName = getNextLevel(SceneManager.GetActiveScene().name);
 	}
-
 	private void Update()
 	{
 	}
@@ -40,10 +47,29 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	private void OnRun(Vector2 movementInput)
+	{
+		if (movementInput.x > 0) { _spriteRenderer.flipX = false; }
+		else if (movementInput.x < 0) { _spriteRenderer.flipX = true; }
+
+		_inputVector = movementInput;
+	}
+
+	private void OnEnable()
+	{
+		_inputReader.RunEvent += OnRun;
+	}
+
+	private void OnDisable()
+	{
+		_inputReader.RunEvent -= OnRun;
+	}
+
+
 	private void Move()
 	{
-		float horizontalInput = Input.GetAxis("Horizontal");
-		float verticalInput = Input.GetAxis("Vertical");
+		float horizontalInput = _inputVector.x;
+		float verticalInput = _inputVector.y;
 
 		Vector2 movement = new Vector2(horizontalInput, verticalInput).normalized;
 
