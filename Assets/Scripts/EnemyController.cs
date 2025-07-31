@@ -8,8 +8,10 @@ public class EnemyController : MonoBehaviour
 {
     private Transform _targetPosition;
     private Rigidbody2D _rb;
+	private Vector2 _startingPosition;
+    private Vector2 _delta;
 
-    [Header("Damage Settings")]
+	[Header("Damage Settings")]
     [SerializeField] private float _damageFrequency = 1f;
     [SerializeField] private int _damage = 1;
     //[SerializeField] private GameObject _damageEffect = default;
@@ -17,8 +19,17 @@ public class EnemyController : MonoBehaviour
     [Header("Layer Settings")]
     [SerializeField] private Collider2D _collider;
 
-    [Header("Speeds")]
-    [SerializeField] private float walkingSpeed = 1f;
+    [Header("Movement Settings")]
+    [SerializeField] private float chaseSpeed = 1f;
+    [SerializeField] private float wanderSpeed = 1f;
+    [Tooltip("Amount of time that the wander AI waits to change directions")]
+    [SerializeField] private float wanderDirectionChangeCooldown = 1f;
+    [Tooltip("Maximum distance entity will wander from its start point.")]
+    [SerializeField] private float wanderDistance = 5f;
+
+    [Header("Temperment Settings")]
+    [Tooltip("Distance at which an enemy will see the player and decide to start chasing them. The larger the number the larger the range.")]
+    [SerializeField] private float aggroRange = 10f;
 
     //[Header("Audio")]
     // [SerializeField] private AudioSource _passiveNoise;
@@ -30,19 +41,48 @@ public class EnemyController : MonoBehaviour
     {
         _targetPosition = GameObject.FindGameObjectWithTag("Player").transform;
         _rb = GetComponent<Rigidbody2D>();
+        _delta = transform.position;
+        _startingPosition = transform.position;
         // _passiveNoise = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
     {
-        Vector3 direction = (_targetPosition.position - transform.position);//.normalized;
-        walk(direction);
+        if(Vector3.Distance(_targetPosition.position, transform.position) <= aggroRange)
+        {
+			Vector3 direction = (_targetPosition.position - transform.position).normalized;//.normalized;
+			chase(direction);
+		}
+        else
+        {
+            wander();
+        }
+        
+
     }
 
-    private void walk(Vector3 dir)
+    private void chase(Vector3 dir)
     {
-        _rb.MovePosition(_rb.position + new Vector2(dir.x, 0) * walkingSpeed * Time.deltaTime);
+        _rb.MovePosition(_rb.position + new Vector2(dir.x, dir.y) * chaseSpeed * Time.deltaTime);
     }
+
+    private void wander()
+    {
+
+		wanderDirectionChangeCooldown -= Time.deltaTime;
+
+		if (wanderDirectionChangeCooldown <= 0)
+		{
+            Vector3 targetPosition = new Vector3(
+                _startingPosition.x + UnityEngine.Random.Range(-1 * wanderDistance, wanderDistance),
+                _startingPosition.y + UnityEngine.Random.Range(-1 * wanderDistance, wanderDistance), 0);
+
+            _delta = (targetPosition - transform.position).normalized;
+
+			wanderDirectionChangeCooldown = UnityEngine.Random.Range(1f, 5f);
+		}
+		_rb.MovePosition(_rb.position + new Vector2(_delta.x, _delta.y) * wanderSpeed * Time.deltaTime);
+	}
 
 
     private void OnTriggerStay2D(Collider2D other)

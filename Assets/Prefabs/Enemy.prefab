@@ -229,11 +229,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damageFrequency: 1
   _damage: 1
-  _damageEffect: {fileID: 0}
   _collider: {fileID: 0}
-  walkingSpeed: 1
-  _passiveNoise: {fileID: 0}
-  _deathSoundObject: {fileID: 0}
+  chaseSpeed: 3
+  wanderSpeed: 0.5
+  wanderDirectionChangeCooldown: 1
+  wanderDistance: 5
+  aggroRange: 10
 --- !u!58 &5921358240805652991
 CircleCollider2D:
   m_ObjectHideFlags: 0
