@@ -295,7 +295,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -309,7 +309,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -333,7 +333,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -374,10 +374,10 @@ TextureImporter:
       name: Western-Props-304x256_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 239
-        width: 146
-        height: 17
+        x: 16
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,10 +396,10 @@ TextureImporter:
       name: Western-Props-304x256_1
       rect:
         serializedVersion: 2
-        x: 98
-        y: 207
-        width: 11
-        height: 33
+        x: 32
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,9 +418,9 @@ TextureImporter:
       name: Western-Props-304x256_2
       rect:
         serializedVersion: 2
-        x: 115
-        y: 223
-        width: 9
+        x: 48
+        y: 240
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -440,10 +440,10 @@ TextureImporter:
       name: Western-Props-304x256_3
       rect:
         serializedVersion: 2
-        x: 159
-        y: 159
-        width: 18
-        height: 91
+        x: 64
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,10 +462,10 @@ TextureImporter:
       name: Western-Props-304x256_4
       rect:
         serializedVersion: 2
-        x: 177
-        y: 207
-        width: 30
-        height: 49
+        x: 80
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,10 +484,10 @@ TextureImporter:
       name: Western-Props-304x256_5
       rect:
         serializedVersion: 2
-        x: 209
-        y: 207
-        width: 30
-        height: 49
+        x: 96
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -506,10 +506,10 @@ TextureImporter:
       name: Western-Props-304x256_6
       rect:
         serializedVersion: 2
-        x: 246
-        y: 207
-        width: 24
-        height: 39
+        x: 112
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,10 +528,10 @@ TextureImporter:
       name: Western-Props-304x256_7
       rect:
         serializedVersion: 2
-        x: 278
-        y: 207
-        width: 24
-        height: 39
+        x: 128
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -550,10 +550,10 @@ TextureImporter:
       name: Western-Props-304x256_8
       rect:
         serializedVersion: 2
-        x: 4
-        y: 223
-        width: 7
-        height: 11
+        x: 144
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,10 +572,10 @@ TextureImporter:
       name: Western-Props-304x256_9
       rect:
         serializedVersion: 2
-        x: 20
-        y: 223
-        width: 7
-        height: 11
+        x: 160
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -591,145 +591,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Western-Props-304x256_10
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 223
-        width: 7
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 04b929688cc9e5ec0800000000000000
-      internalID: -3576248669020447936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_11
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 223
-        width: 11
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16755c91e99590490800000000000000
-      internalID: -7779588345733752991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_12
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 223
-        width: 11
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9e6ae4abc32421230800000000000000
-      internalID: 3608019080068376297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_13
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 223
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17e3996e564fc4270800000000000000
-      internalID: 8236226537051471473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_14
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 207
-        width: 12
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d539b4d2ceb7c2560800000000000000
-      internalID: 7290338151108416349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_15
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 207
-        width: 12
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d0b93437b5abfdd90800000000000000
-      internalID: -7070727988009788659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Western-Props-304x256_16
       rect:
         serializedVersion: 2
-        x: 4
-        y: 207
-        width: 7
-        height: 11
+        x: 0
+        y: 224
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -748,10 +616,10 @@ TextureImporter:
       name: Western-Props-304x256_17
       rect:
         serializedVersion: 2
-        x: 20
-        y: 207
-        width: 7
-        height: 11
+        x: 16
+        y: 224
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -770,10 +638,10 @@ TextureImporter:
       name: Western-Props-304x256_18
       rect:
         serializedVersion: 2
-        x: 36
-        y: 207
-        width: 7
-        height: 11
+        x: 32
+        y: 224
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -792,10 +660,10 @@ TextureImporter:
       name: Western-Props-304x256_19
       rect:
         serializedVersion: 2
-        x: 50
-        y: 207
-        width: 11
-        height: 7
+        x: 48
+        y: 224
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,10 +682,10 @@ TextureImporter:
       name: Western-Props-304x256_20
       rect:
         serializedVersion: 2
-        x: 66
-        y: 207
-        width: 11
-        height: 7
+        x: 64
+        y: 224
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -836,10 +704,10 @@ TextureImporter:
       name: Western-Props-304x256_21
       rect:
         serializedVersion: 2
-        x: 82
-        y: 207
-        width: 11
-        height: 7
+        x: 80
+        y: 224
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -858,10 +726,10 @@ TextureImporter:
       name: Western-Props-304x256_22
       rect:
         serializedVersion: 2
-        x: 112
-        y: 207
+        x: 96
+        y: 224
         width: 16
-        height: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,10 +748,10 @@ TextureImporter:
       name: Western-Props-304x256_23
       rect:
         serializedVersion: 2
-        x: 159
-        y: 95
-        width: 82
-        height: 113
+        x: 112
+        y: 224
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -902,9 +770,9 @@ TextureImporter:
       name: Western-Props-304x256_24
       rect:
         serializedVersion: 2
-        x: 239
-        y: 191
-        width: 40
+        x: 128
+        y: 224
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -924,9 +792,9 @@ TextureImporter:
       name: Western-Props-304x256_25
       rect:
         serializedVersion: 2
-        x: 287
-        y: 191
-        width: 8
+        x: 144
+        y: 224
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -946,10 +814,10 @@ TextureImporter:
       name: Western-Props-304x256_26
       rect:
         serializedVersion: 2
-        x: 0
-        y: 159
+        x: 160
+        y: 224
         width: 16
-        height: 33
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -965,167 +833,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Western-Props-304x256_27
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 191
-        width: 7
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50e46f9f795376db0800000000000000
-      internalID: -4798807951089971707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_28
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 191
-        width: 7
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 96ad9209e009337a0800000000000000
-      internalID: -6398612253340738967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_29
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 159
-        width: 16
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e4cb3a139022988a0800000000000000
-      internalID: -6302468780645434290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_30
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 191
-        width: 7
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8f9a6cba1ac5a8720800000000000000
-      internalID: 2849191563706673656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_31
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 191
-        width: 11
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50d7c6b4471cab1b0800000000000000
-      internalID: -5639982878102356731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_32
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 159
-        width: 16
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ead2442e0cef16180800000000000000
-      internalID: -9123731265692619346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_33
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 191
-        width: 11
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1143e7ba2a33a5430800000000000000
-      internalID: 3772384411631105041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Western-Props-304x256_34
       rect:
         serializedVersion: 2
-        x: 82
-        y: 191
-        width: 10
-        height: 7
+        x: 0
+        y: 208
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1144,10 +858,10 @@ TextureImporter:
       name: Western-Props-304x256_35
       rect:
         serializedVersion: 2
-        x: 96
-        y: 191
+        x: 16
+        y: 208
         width: 16
-        height: 9
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1166,10 +880,10 @@ TextureImporter:
       name: Western-Props-304x256_36
       rect:
         serializedVersion: 2
-        x: 96
-        y: 175
+        x: 32
+        y: 208
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1188,10 +902,10 @@ TextureImporter:
       name: Western-Props-304x256_37
       rect:
         serializedVersion: 2
-        x: 115
-        y: 191
-        width: 10
-        height: 9
+        x: 48
+        y: 208
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1210,10 +924,10 @@ TextureImporter:
       name: Western-Props-304x256_38
       rect:
         serializedVersion: 2
-        x: 130
-        y: 191
-        width: 29
-        height: 11
+        x: 64
+        y: 208
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1232,10 +946,10 @@ TextureImporter:
       name: Western-Props-304x256_39
       rect:
         serializedVersion: 2
-        x: 132
-        y: 175
-        width: 25
-        height: 17
+        x: 80
+        y: 208
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1254,9 +968,9 @@ TextureImporter:
       name: Western-Props-304x256_40
       rect:
         serializedVersion: 2
-        x: 239
-        y: 175
-        width: 34
+        x: 96
+        y: 208
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1276,9 +990,9 @@ TextureImporter:
       name: Western-Props-304x256_41
       rect:
         serializedVersion: 2
-        x: 281
-        y: 175
-        width: 8
+        x: 112
+        y: 208
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1298,9 +1012,9 @@ TextureImporter:
       name: Western-Props-304x256_42
       rect:
         serializedVersion: 2
-        x: 297
-        y: 175
-        width: 7
+        x: 128
+        y: 208
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1320,10 +1034,10 @@ TextureImporter:
       name: Western-Props-304x256_43
       rect:
         serializedVersion: 2
-        x: 15
-        y: 159
-        width: 18
-        height: 26
+        x: 144
+        y: 208
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1342,10 +1056,10 @@ TextureImporter:
       name: Western-Props-304x256_44
       rect:
         serializedVersion: 2
-        x: 47
-        y: 159
-        width: 18
-        height: 26
+        x: 160
+        y: 208
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1361,100 +1075,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Western-Props-304x256_45
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 159
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d224cfe55f1595080800000000000000
-      internalID: -9198230649625099731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_46
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 160
-        width: 12
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c01462553927f28e0800000000000000
-      internalID: -1716026955890540276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_47
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 175
-        width: 18
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b0d22aa0b975d4950800000000000000
-      internalID: 6434895765992254731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_48
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 160
-        width: 12
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fdac52d0d37a3fec0800000000000000
-      internalID: -3534297401900283169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Western-Props-304x256_49
       rect:
         serializedVersion: 2
-        x: 249
-        y: 159
-        width: 8
+        x: 0
+        y: 192
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1474,9 +1100,9 @@ TextureImporter:
       name: Western-Props-304x256_50
       rect:
         serializedVersion: 2
-        x: 265
-        y: 159
-        width: 14
+        x: 16
+        y: 192
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1496,9 +1122,9 @@ TextureImporter:
       name: Western-Props-304x256_51
       rect:
         serializedVersion: 2
-        x: 287
-        y: 159
-        width: 8
+        x: 32
+        y: 192
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1518,10 +1144,10 @@ TextureImporter:
       name: Western-Props-304x256_52
       rect:
         serializedVersion: 2
-        x: 4
-        y: 143
-        width: 9
-        height: 11
+        x: 48
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1540,10 +1166,10 @@ TextureImporter:
       name: Western-Props-304x256_53
       rect:
         serializedVersion: 2
-        x: 20
-        y: 143
-        width: 9
-        height: 11
+        x: 64
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1562,10 +1188,10 @@ TextureImporter:
       name: Western-Props-304x256_54
       rect:
         serializedVersion: 2
-        x: 36
-        y: 143
-        width: 10
-        height: 14
+        x: 80
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1584,10 +1210,10 @@ TextureImporter:
       name: Western-Props-304x256_55
       rect:
         serializedVersion: 2
-        x: 52
-        y: 143
-        width: 10
-        height: 14
+        x: 96
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1606,10 +1232,10 @@ TextureImporter:
       name: Western-Props-304x256_56
       rect:
         serializedVersion: 2
-        x: 68
-        y: 143
-        width: 9
-        height: 7
+        x: 112
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1628,10 +1254,10 @@ TextureImporter:
       name: Western-Props-304x256_57
       rect:
         serializedVersion: 2
-        x: 84
-        y: 143
-        width: 9
-        height: 7
+        x: 128
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1650,10 +1276,10 @@ TextureImporter:
       name: Western-Props-304x256_58
       rect:
         serializedVersion: 2
-        x: 100
-        y: 143
-        width: 10
-        height: 10
+        x: 144
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1672,10 +1298,10 @@ TextureImporter:
       name: Western-Props-304x256_59
       rect:
         serializedVersion: 2
-        x: 116
-        y: 143
-        width: 10
-        height: 10
+        x: 160
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1691,101 +1317,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Western-Props-304x256_60
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 95
-        width: 13
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9b04e31c7e2ac1c40800000000000000
-      internalID: 5484437562493649081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_61
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 95
-        width: 13
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2ae99ab5073ce86a0800000000000000
-      internalID: -6444999129379004766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_62
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 127
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea86e6f25e95b10c0800000000000000
-      internalID: -4603987353178052434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_63
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 127
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94714cc51c25b1700800000000000000
-      internalID: 512093973075203913
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Western-Props-304x256_64
       rect:
         serializedVersion: 2
-        x: 36
-        y: 127
-        width: 10
-        height: 14
+        x: 240
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1804,10 +1342,10 @@ TextureImporter:
       name: Western-Props-304x256_65
       rect:
         serializedVersion: 2
-        x: 52
-        y: 127
-        width: 10
-        height: 14
+        x: 256
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1826,10 +1364,10 @@ TextureImporter:
       name: Western-Props-304x256_66
       rect:
         serializedVersion: 2
-        x: 68
-        y: 127
-        width: 9
-        height: 7
+        x: 272
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1848,10 +1386,10 @@ TextureImporter:
       name: Western-Props-304x256_67
       rect:
         serializedVersion: 2
-        x: 84
-        y: 127
-        width: 9
-        height: 7
+        x: 288
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1870,10 +1408,10 @@ TextureImporter:
       name: Western-Props-304x256_68
       rect:
         serializedVersion: 2
-        x: 100
-        y: 127
-        width: 10
-        height: 10
+        x: 0
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1892,10 +1430,10 @@ TextureImporter:
       name: Western-Props-304x256_69
       rect:
         serializedVersion: 2
-        x: 116
-        y: 127
-        width: 10
-        height: 10
+        x: 16
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1914,10 +1452,10 @@ TextureImporter:
       name: Western-Props-304x256_70
       rect:
         serializedVersion: 2
-        x: 4
-        y: 111
-        width: 9
-        height: 11
+        x: 32
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1936,10 +1474,10 @@ TextureImporter:
       name: Western-Props-304x256_71
       rect:
         serializedVersion: 2
-        x: 20
-        y: 111
-        width: 9
-        height: 11
+        x: 48
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1958,10 +1496,10 @@ TextureImporter:
       name: Western-Props-304x256_72
       rect:
         serializedVersion: 2
-        x: 36
-        y: 111
-        width: 10
-        height: 14
+        x: 64
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1980,10 +1518,10 @@ TextureImporter:
       name: Western-Props-304x256_73
       rect:
         serializedVersion: 2
-        x: 52
-        y: 111
-        width: 10
-        height: 14
+        x: 80
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2002,10 +1540,10 @@ TextureImporter:
       name: Western-Props-304x256_74
       rect:
         serializedVersion: 2
-        x: 68
-        y: 111
-        width: 9
-        height: 7
+        x: 96
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2024,10 +1562,10 @@ TextureImporter:
       name: Western-Props-304x256_75
       rect:
         serializedVersion: 2
-        x: 84
-        y: 111
-        width: 9
-        height: 7
+        x: 112
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2046,10 +1584,10 @@ TextureImporter:
       name: Western-Props-304x256_76
       rect:
         serializedVersion: 2
-        x: 100
-        y: 111
-        width: 10
-        height: 10
+        x: 128
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2068,10 +1606,10 @@ TextureImporter:
       name: Western-Props-304x256_77
       rect:
         serializedVersion: 2
-        x: 116
-        y: 111
-        width: 10
-        height: 10
+        x: 144
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2090,10 +1628,10 @@ TextureImporter:
       name: Western-Props-304x256_78
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 113
-        height: 96
+        x: 160
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2109,79 +1647,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Western-Props-304x256_79
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 95
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6840d3c76de73c600800000000000000
-      internalID: 487372644358620294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_80
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 95
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 894a6798e7be23870800000000000000
-      internalID: 8661243962091545752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Western-Props-304x256_81
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 95
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 07feecc14a3af9580800000000000000
-      internalID: -8818149620114854032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Western-Props-304x256_82
       rect:
         serializedVersion: 2
-        x: 52
-        y: 95
-        width: 10
-        height: 10
+        x: 240
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2200,10 +1672,10 @@ TextureImporter:
       name: Western-Props-304x256_83
       rect:
         serializedVersion: 2
-        x: 68
-        y: 95
-        width: 9
-        height: 11
+        x: 256
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2222,10 +1694,10 @@ TextureImporter:
       name: Western-Props-304x256_84
       rect:
         serializedVersion: 2
-        x: 84
-        y: 95
-        width: 10
-        height: 14
+        x: 272
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2244,10 +1716,10 @@ TextureImporter:
       name: Western-Props-304x256_85
       rect:
         serializedVersion: 2
-        x: 100
-        y: 95
-        width: 9
-        height: 7
+        x: 288
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2266,10 +1738,10 @@ TextureImporter:
       name: Western-Props-304x256_86
       rect:
         serializedVersion: 2
-        x: 116
-        y: 95
-        width: 10
-        height: 10
+        x: 0
+        y: 160
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2284,11 +1756,1573 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_87
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8d5d36e34265e45a456ad97392b466
+      internalID: -261411591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_88
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47469fcaac2e8e24db0c3fbb495f418e
+      internalID: -105364997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_89
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4c12e5902579145a3fbe3764fa9bec
+      internalID: -1382805037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_90
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6844f103b05a6334c839a45bcd1acaac
+      internalID: -168341003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_91
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbf9a42968a5de4398143635fe4d9e3
+      internalID: -1373498421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_92
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5acbe47d5b80a44090dd3251e2bc6bd
+      internalID: -395707633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_93
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b3251bf29277d49bda343a5b5a8996
+      internalID: -141720633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_94
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a9090422017c040a725dd40448121b
+      internalID: 1509712782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_95
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3633bf4d0b2ee48b7a6a8352b8074f
+      internalID: 208524909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_96
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc3b8e7dd58c6d44882e6ab021bd880
+      internalID: 35356088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_99
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd341f19857f77b46851da769650c8b8
+      internalID: 1490536339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_100
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4732d9699a56ba24dbe59885db215b43
+      internalID: 487104121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_101
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854671e450ec8754a852a8f385b6133c
+      internalID: -1525441041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_102
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68554e03df41b754cb07a2110b681484
+      internalID: -1821886817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e6975f1195e504d87bb5393e28bb3c
+      internalID: 1684478736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_104
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aff96305e5e1a545be4d4a87dd646f0
+      internalID: -1125604562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_105
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b89bebe6c981048b615159fe1b4e34
+      internalID: 796984952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_106
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c9180c03512eb4cba2cc2b111b2c20
+      internalID: 470003216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_107
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f132ccd265ca8a34485749145398517e
+      internalID: 695879796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_108
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750b1940052999d45a9cbb6e02db4599
+      internalID: 1749707442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_109
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa14ac29d332c884e9765c6645a9e048
+      internalID: 1603179820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_110
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866ac0867b0fa7a4bb6ab7f3e1f3cb0c
+      internalID: -1072393930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_113
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df4e6d54bef40c42b32d5ae573324fb
+      internalID: -983277359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_114
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e076fbbfc05a0940831fdb6fa08eeb1
+      internalID: -117650512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_115
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1b5ef00e4df5f4e81fe28b1dc5b9be
+      internalID: -1301130427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_116
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df086e61e44156d4b8c413c22b21e57f
+      internalID: -277116398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_117
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6daff9f4da150c4b913fea297b8406a
+      internalID: -1889695592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_118
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b2893973f3f8c478a90cc5ac9d243d
+      internalID: 630766394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_119
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e733765478bdb5947bdb710e48cb2cad
+      internalID: 1856533270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_120
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a43fb7da38c3be408326d318a2dd4ce
+      internalID: -584626245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_121
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e90da079a1b21419c4a6537050a3dd
+      internalID: -520900912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_122
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1454f7fdfc9ce74ebd9bffd7ff98bb2
+      internalID: 1757345525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_123
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e8ae1e8442d674996822b713750199
+      internalID: 1840728664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_124
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bafcab47ac0e84588f25bd49e23209
+      internalID: -2011914347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_125
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483c8b2925679eb4d80d92566d09f94e
+      internalID: 710440849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_128
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4668098ff07b2c84e8ed188b88eeb8fb
+      internalID: -1287515115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_129
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1815e69aabd62145940d1997e6119ef
+      internalID: 1448222194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_130
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7bab7686db5d54fb0092b1dd1b95c1
+      internalID: 488312431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_131
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ed3cb496e0cc24b8586d499b6f0b33
+      internalID: 1974513888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_132
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ef36d41f3df124fb227b3672f9fa17
+      internalID: 1421351959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd951bb5891f6141b0a3d8bd20fcf8d
+      internalID: 1574006747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_134
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad8a0c3986fc75459ca08bb05a5e70b
+      internalID: 914017795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_135
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1b374dd2d525f428db247afdf77f4b
+      internalID: 1841357577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_136
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf23787378381144ebc6ab0a743c4d41
+      internalID: -1730611479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_137
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562989ed417d27b4cb4f8d956966aa33
+      internalID: -164689985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_138
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0e76fe578e8d64db77669328706430
+      internalID: 888847369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_139
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bb9f3281224c747add6bcedd358f92
+      internalID: 253339078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_140
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705936b4cb8add44fae17fefb114339a
+      internalID: -1847368161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_143
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdfc9eacd4ff9844abb926654c1e38d
+      internalID: 951743308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_144
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dca29250490bb4e96921d0f58a00ce
+      internalID: -70503236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_145
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1591fc0793f3b55499771044c7fa7c35
+      internalID: -434572651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_146
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d33541b170a9b04093e77948b249f51
+      internalID: -2020939458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_147
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d0178a573c360428b8f3090d1d1333
+      internalID: -872832759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_148
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0704b73682fabc7458a4cd1bd52ec5e9
+      internalID: 833307588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_149
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c8eff7c4e02fb44a7fe0e0943bd65a
+      internalID: 253452866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_150
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9457ee074ed6c42aae6d4fca48373a
+      internalID: -550288371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_151
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138ffd771642f814eaa617ffebdfa26c
+      internalID: 908061156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_152
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbea049f605d5bd45ae39072731dcd9a
+      internalID: 222143241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_153
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55315d634719454d808843e27563dde
+      internalID: -1606757598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_154
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491d3d8d5dcfe144a948f8c859c57a0b
+      internalID: 1876040014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_155
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62f95427983d7642a5145b9ab687dca
+      internalID: 651761352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_158
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a056385f067fe458b0a678abf2c387
+      internalID: 10596703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_159
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0fb2dc1b3897241a89c2dd70b2b41f
+      internalID: 1977969928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_160
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9db962efd048f14692b8602a596f68c
+      internalID: -2017400787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_161
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440badee4651b5c4fb91c6abc36ed6fd
+      internalID: -734997729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_162
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be108f53310de3438b2eb52a3774be5
+      internalID: -950109114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_163
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb4cd89509465744ab210964739efcb
+      internalID: -928344563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_164
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87cadcf8a96d4f14ca230ea3e2dcef79
+      internalID: -814399600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_165
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f3a21eadc40034dafe2e992ddba632
+      internalID: -127894530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_166
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb094b938433b24f93eeb67e2e85be0
+      internalID: -757931370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Western-Props-304x256_167
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33b27b82ebff6b4ea53b74f4a1968f0
+      internalID: 1881464886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 103ceb211a556464197965c463ef0564
     internalID: 0
     vertices: []
     indices: 
@@ -2296,22 +3330,125 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Western-Props-304x256_0: -7132955919005433682
       Western-Props-304x256_1: -5832777650238521082
       Western-Props-304x256_10: -3576248669020447936
+      Western-Props-304x256_100: 487104121
+      Western-Props-304x256_101: -1525441041
+      Western-Props-304x256_102: -1821886817
+      Western-Props-304x256_103: 1684478736
+      Western-Props-304x256_104: -1125604562
+      Western-Props-304x256_105: 796984952
+      Western-Props-304x256_106: 470003216
+      Western-Props-304x256_107: 695879796
+      Western-Props-304x256_108: 1749707442
+      Western-Props-304x256_109: 1603179820
       Western-Props-304x256_11: -7779588345733752991
+      Western-Props-304x256_110: -1072393930
+      Western-Props-304x256_111: -887362757
+      Western-Props-304x256_112: 251377394
+      Western-Props-304x256_113: -983277359
+      Western-Props-304x256_114: -117650512
+      Western-Props-304x256_115: -1301130427
+      Western-Props-304x256_116: -277116398
+      Western-Props-304x256_117: -1889695592
+      Western-Props-304x256_118: 630766394
+      Western-Props-304x256_119: 1856533270
       Western-Props-304x256_12: 3608019080068376297
+      Western-Props-304x256_120: -584626245
+      Western-Props-304x256_121: -520900912
+      Western-Props-304x256_122: 1757345525
+      Western-Props-304x256_123: 1840728664
+      Western-Props-304x256_124: -2011914347
+      Western-Props-304x256_125: 710440849
+      Western-Props-304x256_126: 1383839339
+      Western-Props-304x256_127: -45381527
+      Western-Props-304x256_128: -1287515115
+      Western-Props-304x256_129: 1448222194
       Western-Props-304x256_13: 8236226537051471473
+      Western-Props-304x256_130: 488312431
+      Western-Props-304x256_131: 1974513888
+      Western-Props-304x256_132: 1421351959
+      Western-Props-304x256_133: 1574006747
+      Western-Props-304x256_134: 914017795
+      Western-Props-304x256_135: 1841357577
+      Western-Props-304x256_136: -1730611479
+      Western-Props-304x256_137: -164689985
+      Western-Props-304x256_138: 888847369
+      Western-Props-304x256_139: 253339078
       Western-Props-304x256_14: 7290338151108416349
+      Western-Props-304x256_140: -1847368161
+      Western-Props-304x256_141: 1173606366
+      Western-Props-304x256_142: -786782831
+      Western-Props-304x256_143: 951743308
+      Western-Props-304x256_144: -70503236
+      Western-Props-304x256_145: -434572651
+      Western-Props-304x256_146: -2020939458
+      Western-Props-304x256_147: -872832759
+      Western-Props-304x256_148: 833307588
+      Western-Props-304x256_149: 253452866
       Western-Props-304x256_15: -7070727988009788659
+      Western-Props-304x256_150: -550288371
+      Western-Props-304x256_151: 908061156
+      Western-Props-304x256_152: 222143241
+      Western-Props-304x256_153: -1606757598
+      Western-Props-304x256_154: 1876040014
+      Western-Props-304x256_155: 651761352
+      Western-Props-304x256_156: 728021392
+      Western-Props-304x256_157: -877469946
+      Western-Props-304x256_158: 10596703
+      Western-Props-304x256_159: 1977969928
       Western-Props-304x256_16: 4643930633996517973
+      Western-Props-304x256_160: -2017400787
+      Western-Props-304x256_161: -734997729
+      Western-Props-304x256_162: -950109114
+      Western-Props-304x256_163: -928344563
+      Western-Props-304x256_164: -814399600
+      Western-Props-304x256_165: -127894530
+      Western-Props-304x256_166: -757931370
+      Western-Props-304x256_167: 1881464886
+      Western-Props-304x256_168: -34824302
+      Western-Props-304x256_169: -1695680694
       Western-Props-304x256_17: -1214378735401674909
+      Western-Props-304x256_170: -1573783533
+      Western-Props-304x256_171: 1451905841
+      Western-Props-304x256_172: -1979544550
+      Western-Props-304x256_173: -1540593907
+      Western-Props-304x256_174: -2123953681
+      Western-Props-304x256_175: 1526895955
+      Western-Props-304x256_176: -557699066
+      Western-Props-304x256_177: 1247496168
+      Western-Props-304x256_178: 312958976
+      Western-Props-304x256_179: 1821862034
       Western-Props-304x256_18: -4693164282159611216
+      Western-Props-304x256_180: 1104533452
+      Western-Props-304x256_181: 2041196823
+      Western-Props-304x256_182: 765943285
+      Western-Props-304x256_183: -1410383939
+      Western-Props-304x256_184: 1236897341
+      Western-Props-304x256_185: -1038951675
+      Western-Props-304x256_186: 1066071387
+      Western-Props-304x256_187: -1061071377
+      Western-Props-304x256_188: 1784243016
+      Western-Props-304x256_189: 10141466
       Western-Props-304x256_19: -6249189622387705134
+      Western-Props-304x256_190: 436624176
+      Western-Props-304x256_191: -1034218017
+      Western-Props-304x256_192: -649605344
+      Western-Props-304x256_193: -1027071119
+      Western-Props-304x256_194: -1402896177
+      Western-Props-304x256_195: 775845011
+      Western-Props-304x256_196: 571784992
+      Western-Props-304x256_197: 486717897
+      Western-Props-304x256_198: 1710085215
+      Western-Props-304x256_199: -958340438
       Western-Props-304x256_2: 831332960190904157
       Western-Props-304x256_20: 2386826721318203485
+      Western-Props-304x256_200: 775999562
       Western-Props-304x256_21: -4714050886561057852
       Western-Props-304x256_22: -1625724508823323829
       Western-Props-304x256_23: 3142065733178864771
@@ -2384,7 +3521,20 @@ TextureImporter:
       Western-Props-304x256_84: -6968178116629267412
       Western-Props-304x256_85: 896248165036995115
       Western-Props-304x256_86: -2917323774331801660
+      Western-Props-304x256_87: -261411591
+      Western-Props-304x256_88: -105364997
+      Western-Props-304x256_89: -1382805037
       Western-Props-304x256_9: -1565892960703549777
+      Western-Props-304x256_90: -168341003
+      Western-Props-304x256_91: -1373498421
+      Western-Props-304x256_92: -395707633
+      Western-Props-304x256_93: -141720633
+      Western-Props-304x256_94: 1509712782
+      Western-Props-304x256_95: 208524909
+      Western-Props-304x256_96: 35356088
+      Western-Props-304x256_97: -431787783
+      Western-Props-304x256_98: 444444739
+      Western-Props-304x256_99: 1490536339
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
