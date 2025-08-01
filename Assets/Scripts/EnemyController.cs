@@ -6,10 +6,18 @@ using Unity.VisualScripting;
 
 public class EnemyController : MonoBehaviour
 {
-    private Transform _targetPosition;
+	public enum MovementState
+	{
+		wandering,
+		chasing
+	}
+
+	private Transform _targetPosition;
     private Rigidbody2D _rb;
+    private SpriteRenderer _spriteRenderer;
 	private Vector2 _startingPosition;
     private Vector2 _delta;
+    public MovementState _movementState { get; set; }
 
 	[Header("Damage Settings")]
     [SerializeField] private float _damageFrequency = 1f;
@@ -30,6 +38,8 @@ public class EnemyController : MonoBehaviour
     [Header("Temperment Settings")]
     [Tooltip("Distance at which an enemy will see the player and decide to start chasing them. The larger the number the larger the range.")]
     [SerializeField] private float aggroRange = 10f;
+    [Tooltip("Distance at which an enemy will stop chasing the player, should be longer than the aggro range.")]
+    [SerializeField] private float loseAggroRange = 12f;
 
     //[Header("Audio")]
     // [SerializeField] private AudioSource _passiveNoise;
@@ -41,6 +51,7 @@ public class EnemyController : MonoBehaviour
     {
         _targetPosition = GameObject.FindGameObjectWithTag("Player").transform;
         _rb = GetComponent<Rigidbody2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         _delta = transform.position;
         _startingPosition = transform.position;
         // _passiveNoise = GetComponent<AudioSource>();
@@ -48,27 +59,23 @@ public class EnemyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(Vector3.Distance(_targetPosition.position, transform.position) <= aggroRange)
+        if( //If we are wandering and the player is in aggro range, or if we are chasing and the player isnt out of aggro range
+            _movementState == MovementState.wandering && Vector3.Distance(_targetPosition.position, transform.position) <= aggroRange ||
+			_movementState == MovementState.chasing && Vector3.Distance(_targetPosition.position, transform.position) <= loseAggroRange) 
         {
-			Vector3 direction = (_targetPosition.position - transform.position).normalized;//.normalized;
-			chase(direction);
+			Vector3 direction = (_targetPosition.position - transform.position).normalized;
+            _movementState = MovementState.chasing;
+            move(new Vector2(direction.x, direction.y), chaseSpeed);
 		}
         else
         {
             wander();
         }
-        
-
-    }
-
-    private void chase(Vector3 dir)
-    {
-        _rb.MovePosition(_rb.position + new Vector2(dir.x, dir.y) * chaseSpeed * Time.deltaTime);
     }
 
     private void wander()
     {
-
+		_movementState = MovementState.wandering;
 		wanderDirectionChangeCooldown -= Time.deltaTime;
 
 		if (wanderDirectionChangeCooldown <= 0)
@@ -81,11 +88,25 @@ public class EnemyController : MonoBehaviour
 
 			wanderDirectionChangeCooldown = UnityEngine.Random.Range(1f, 5f);
 		}
-		_rb.MovePosition(_rb.position + new Vector2(_delta.x, _delta.y) * wanderSpeed * Time.deltaTime);
+        move(new Vector2(_delta.x, _delta.y), wanderSpeed);
+	}
+
+	private void move(Vector2 endposition, float speed)
+	{
+
+        _rb.MovePosition(_rb.position + endposition * speed * Time.deltaTime);
+		if (endposition.x > 0)
+		{
+            _spriteRenderer.flipX = false;
+		}
+        else
+        {
+            _spriteRenderer.flipX = true;
+        }
 	}
 
 
-    private void OnTriggerStay2D(Collider2D other)
+	private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
