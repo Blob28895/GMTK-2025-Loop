@@ -6,6 +6,9 @@ public class Lasso : MonoBehaviour
 {
     // Rope prefab
     public GameObject ropeLine = default;
+    // CapturePoint prefab
+    public GameObject capturePoint = default;
+
     [SerializeField] private InputReaderSO _inputReader = default;
 
     private Rope _currentRope = default;
@@ -36,6 +39,7 @@ public class Lasso : MonoBehaviour
         if (context.phase == InputActionPhase.Started)
         {
             _currentRope = Instantiate(ropeLine, _currMousePosition, Quaternion.identity).GetComponent<Rope>();
+            Instantiate(capturePoint, _currMousePosition, Quaternion.identity);
         }
 
         if (context.phase == InputActionPhase.Canceled && _currentRope != null)
