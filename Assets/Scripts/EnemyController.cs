@@ -47,10 +47,13 @@ public class EnemyController : MonoBehaviour
 	[SerializeField] private float attackRange = 1.5f;
 	[SerializeField] private float attackCooldown = 5f;
 
-	//[Header("Audio")]
-	// [SerializeField] private AudioSource _passiveNoise;
-	//[Tooltip("Object that will spawn to play the enemy death noise when an enemy dies. Since it cant be playing a sound while also destroying itself")]
-	//[SerializeField] private GameObject _deathSoundObject;
+    //[Header("Audio")]
+    // [SerializeField] private AudioSource _passiveNoise;
+    //[Tooltip("Object that will spawn to play the enemy death noise when an enemy dies. Since it cant be playing a sound while also destroying itself")]
+    //[SerializeField] private GameObject _deathSoundObject;
+
+    [Header("Asset References")]
+    [SerializeField] private HealthSO enemyHealth = default;
 
 
 	void Start()
@@ -157,10 +160,12 @@ public class EnemyController : MonoBehaviour
 		}
 	}
 
-
-	public void Die()
+    public void Damage(int damageAmount)
     {
-        // Instantiate(_deathSoundObject);
-        Destroy(gameObject);
+        enemyHealth.Damage(damageAmount);
+        if(enemyHealth.isDead())
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -241,6 +241,7 @@ MonoBehaviour:
   loseAggroRange: 12
   attackRange: 1.5
   attackCooldown: 5
+  enemyHealth: {fileID: 11400000, guid: b57b777077f200d4596c87691516c7f4, type: 2}
 --- !u!58 &5921358240805652991
 CircleCollider2D:
   m_ObjectHideFlags: 0

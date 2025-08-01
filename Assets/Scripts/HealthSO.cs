@@ -65,4 +65,6 @@ public class HealthSO : ScriptableObject
 
     public int GetStartingHealth() { return _startingHealth; }
     public int GetHealth() { return _currentHealth; }
+
+    public bool isDead() {  return _isDead; }
 }
