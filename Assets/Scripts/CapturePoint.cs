@@ -17,7 +17,6 @@ public class CapturePoint : MonoBehaviour
 
     private void CheckForFull()
     {
-        Debug.Log(numTriggers);
         if (numTriggers < 2)
         {
             return;
