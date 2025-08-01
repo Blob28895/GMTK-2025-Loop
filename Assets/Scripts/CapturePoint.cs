@@ -51,8 +51,7 @@ public class CapturePoint : MonoBehaviour
             if (DoCollidersFullyOverlap(enemyCollider, captureCircle))
             {
                 Debug.Log($"Enemy '{enemy.name}' has been captured!");
-                // Add your capture logic here (e.g., destroy the enemy)
-                Destroy(enemy); 
+                enemy.GetComponent<EnemyController>().Die();
             }
         }
     }
