@@ -50,8 +50,8 @@ public class Lasso : MonoBehaviour
     {
         _currMousePosition = _mainCamera.ScreenToWorldPoint(screenPosition);
         _currMousePosition.z = _cursorDistanceFromCamera;
+        transform.position = _currMousePosition;
 
-        // transform.position = ;
         if(_currentRope != null)
         {
             _currentRope.SetPosition(_currMousePosition);

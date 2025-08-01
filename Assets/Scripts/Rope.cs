@@ -1,8 +1,18 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Rope : MonoBehaviour
 {
     public LineRenderer lineRenderer;
+    public EdgeCollider2D edgeCollider;
+
+    private List<Vector2> points = new List<Vector2>();
+
+    private void Start()
+    {
+        edgeCollider.transform.position -= transform.position;
+    }
 
     private bool CanAppend(Vector2 position)
     {
@@ -21,7 +31,9 @@ public class Rope : MonoBehaviour
             return;
         }
 
+        points.Add(position);
         lineRenderer.positionCount++;
         lineRenderer.SetPosition(lineRenderer.positionCount - 1, position);
+        edgeCollider.points = points.ToArray();
     }
 }
