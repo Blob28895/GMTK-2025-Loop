@@ -34,10 +34,12 @@ public class Lasso : MonoBehaviour
         _inputReader.LookEvent -= SetCursorPosition;
     }
 
+
     public void DrawRope(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Started)
         {
+            Debug.Log("Instantiating new rope");
             _currentRope = Instantiate(ropeLine, _currMousePosition, Quaternion.identity).GetComponent<Rope>();
             Instantiate(capturePoint, _currMousePosition, Quaternion.identity);
         }
