@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3459066315042888232}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 678365283
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 5336855417275088078, guid: fc66a23f31a395d4a9713d655514d9fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -232,10 +232,15 @@ MonoBehaviour:
   _damage: 1
   _collider: {fileID: 0}
   chaseSpeed: 3
+  chaseAnimSpeed: 3
   wanderSpeed: 0.5
+  wanderAnimSpeed: 1
   wanderDirectionChangeCooldown: 1
   wanderDistance: 5
   aggroRange: 10
+  loseAggroRange: 12
+  attackRange: 1.5
+  attackCooldown: 5
 --- !u!58 &5921358240805652991
 CircleCollider2D:
   m_ObjectHideFlags: 0
