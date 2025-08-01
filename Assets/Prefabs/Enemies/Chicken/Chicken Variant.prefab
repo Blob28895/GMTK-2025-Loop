@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: 3459066315042888232, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 16e693500ec5ea548be7a2e55ba062a9, type: 2}
+      objectReference: {fileID: 22100000, guid: 13aeb2f5ad108f34ca6e6cd3e856e252, type: 2}
     - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: aggroRange
       value: 6
@@ -63,27 +63,5 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8080129172691440808, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5076121020301021645}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
---- !u!1 &2293876289809218752 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8080129172691440808, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
-  m_PrefabInstance: {fileID: 8067951312543656040}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5076121020301021645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2293876289809218752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddeb96e8089d480489e0dbf2e76d79f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wanderAnimSpeed: 1
-  chaseAnimSpeed: 3

@@ -17,7 +17,9 @@ public class EnemyController : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
 	private Vector2 _startingPosition;
     private Vector2 _delta;
-    public MovementState _movementState { get; set; }
+	private Animator _animator;
+	private float cooldownTimer = 0f;
+	public MovementState _movementState { get; set; }
 
 	[Header("Damage Settings")]
     [SerializeField] private float _damageFrequency = 1f;
@@ -29,8 +31,10 @@ public class EnemyController : MonoBehaviour
 
     [Header("Movement Settings")]
     [SerializeField] private float chaseSpeed = 1f;
-    [SerializeField] private float wanderSpeed = 1f;
-    [Tooltip("Amount of time that the wander AI waits to change directions")]
+	[SerializeField] private float chaseAnimSpeed = 3f;
+	[SerializeField] private float wanderSpeed = 1f;
+	[SerializeField] private float wanderAnimSpeed = 1f;
+	[Tooltip("Amount of time that the wander AI waits to change directions")]
     [SerializeField] private float wanderDirectionChangeCooldown = 1f;
     [Tooltip("Maximum distance entity will wander from its start point.")]
     [SerializeField] private float wanderDistance = 5f;
@@ -40,26 +44,33 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float aggroRange = 10f;
     [Tooltip("Distance at which an enemy will stop chasing the player, should be longer than the aggro range.")]
     [SerializeField] private float loseAggroRange = 12f;
+	[SerializeField] private float attackRange = 1.5f;
+	[SerializeField] private float attackCooldown = 5f;
 
-    //[Header("Audio")]
-    // [SerializeField] private AudioSource _passiveNoise;
-    //[Tooltip("Object that will spawn to play the enemy death noise when an enemy dies. Since it cant be playing a sound while also destroying itself")]
-    //[SerializeField] private GameObject _deathSoundObject;
+	//[Header("Audio")]
+	// [SerializeField] private AudioSource _passiveNoise;
+	//[Tooltip("Object that will spawn to play the enemy death noise when an enemy dies. Since it cant be playing a sound while also destroying itself")]
+	//[SerializeField] private GameObject _deathSoundObject;
 
 
-    void Start()
+	void Start()
     {
         _targetPosition = GameObject.FindGameObjectWithTag("Player").transform;
         _rb = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _delta = transform.position;
         _startingPosition = transform.position;
-        // _passiveNoise = GetComponent<AudioSource>();
-    }
+		_animator = GetComponent<Animator>();
+		_animator.SetBool("moving", true);
+		// _passiveNoise = GetComponent<AudioSource>();
+	}
 
     private void FixedUpdate()
     {
-        if( //If we are wandering and the player is in aggro range, or if we are chasing and the player isnt out of aggro range
+
+		if (cooldownTimer > 0) { cooldownTimer -= Time.deltaTime; }
+		
+        if ( //If we are wandering and the player is in aggro range, or if we are chasing and the player isnt out of aggro range
             _movementState == MovementState.wandering && Vector3.Distance(_targetPosition.position, transform.position) <= aggroRange ||
 			_movementState == MovementState.chasing && Vector3.Distance(_targetPosition.position, transform.position) <= loseAggroRange) 
         {
@@ -127,7 +138,27 @@ public class EnemyController : MonoBehaviour
         //_damageEffect.SetActive(false);
     }
 
-    public void Die()
+	public void Update()
+	{
+		if (_movementState == MovementState.wandering)
+		{
+			_animator.SetFloat("walkAnimSpeed", wanderAnimSpeed);
+		}
+		else if (_movementState == MovementState.chasing)
+		{
+			_animator.SetFloat("walkAnimSpeed", chaseAnimSpeed);
+		}
+
+        Debug.Log(gameObject.name + " : " + cooldownTimer);
+		if (Vector3.Distance(_targetPosition.position, transform.position) < attackRange && cooldownTimer <= 0)
+		{
+			_animator.SetTrigger("Attack");
+			cooldownTimer = attackCooldown;
+		}
+	}
+
+
+	public void Die()
     {
         // Instantiate(_deathSoundObject);
         Destroy(gameObject);
