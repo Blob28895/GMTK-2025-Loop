@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Lasso : MonoBehaviour
 {
-    public Rope ropeLine = default;
+    // Rope prefab
+    public GameObject ropeLine = default;
     [SerializeField] private InputReaderSO _inputReader = default;
 
     private Rope _currentRope = default;
@@ -33,12 +35,14 @@ public class Lasso : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Started)
         {
-            _currentRope = Instantiate(ropeLine, _currMousePosition, Quaternion.identity);
+            _currentRope = Instantiate(ropeLine, _currMousePosition, Quaternion.identity).GetComponent<Rope>();
         }
 
         if (context.phase == InputActionPhase.Canceled && _currentRope != null)
         {
             Destroy(_currentRope);
+            GameObject[] ropes = GameObject.FindGameObjectsWithTag("Rope");
+            Array.ForEach(ropes, rope => { Destroy(rope); });
         }
     }
 

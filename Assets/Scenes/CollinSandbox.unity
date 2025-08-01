@@ -325,14 +325,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lasso
       objectReference: {fileID: 0}
-    - target: {fileID: 4566271678839489462, guid: 5277876f5229dbd4aa06d2262c7a6e0f, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
-      value: 0.006187439
-      objectReference: {fileID: 0}
-    - target: {fileID: 4566271678839489462, guid: 5277876f5229dbd4aa06d2262c7a6e0f, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
-      value: 0.5581589
-      objectReference: {fileID: 0}
     - target: {fileID: 6812585574108484586, guid: 5277876f5229dbd4aa06d2262c7a6e0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.50746
@@ -373,9 +365,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3210816661880148196, guid: 5277876f5229dbd4aa06d2262c7a6e0f, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 7068750520226409581, guid: 5277876f5229dbd4aa06d2262c7a6e0f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5277876f5229dbd4aa06d2262c7a6e0f, type: 3}
