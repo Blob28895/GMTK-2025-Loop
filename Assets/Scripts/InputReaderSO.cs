@@ -9,6 +9,7 @@ public class InputReaderSO : ScriptableObject, InputSystem_Actions.IPlayerAction
     public event UnityAction<Vector2> RunEvent = delegate { };
     public event UnityAction<Vector2> LookEvent = delegate { };
     public event UnityAction<InputAction.CallbackContext> AttackEvent = delegate { };
+    public event UnityAction<InputAction.CallbackContext> PauseEvent = delegate { };
 
     private InputSystem_Actions _gameInput;
 
@@ -44,4 +45,5 @@ public class InputReaderSO : ScriptableObject, InputSystem_Actions.IPlayerAction
         }
     }
     public void OnAttack(InputAction.CallbackContext context) { AttackEvent.Invoke(context);  }
+    public void OnPause(InputAction.CallbackContext context) { PauseEvent.Invoke(context);  }
 }
