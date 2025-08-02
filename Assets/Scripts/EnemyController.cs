@@ -16,6 +16,7 @@ public class EnemyController : MonoBehaviour
     public interface Attacker
     {
         void Attack(Transform targetPosition);
+        void stopAttack();
     }
 
     private Transform _targetPosition;
@@ -78,7 +79,7 @@ public class EnemyController : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _delta = transform.position;
         _startingPosition = transform.position;
-        _animator = GetComponent<Animator>();
+        _animator = GetComponentInChildren<Animator>();
         _animator.SetBool("moving", true);
         _attacker = GetComponent<Attacker>();
         // _passiveNoise = GetComponent<AudioSource>();
@@ -97,7 +98,7 @@ public class EnemyController : MonoBehaviour
             _movementState = MovementState.chasing;
             move(new Vector2(direction.x, direction.y), chaseSpeed);
         }
-        else
+        else if(_movementState != MovementState.attacking)
         {
             wander();
         }
@@ -125,16 +126,35 @@ public class EnemyController : MonoBehaviour
     {
 
         _rb.MovePosition(_rb.position + endposition * speed * Time.deltaTime);
-        if (endposition.x > 0)
-        {
-            _spriteRenderer.flipX = false;
-        }
-        else
-        {
-            _spriteRenderer.flipX = true;
-
-        }
+        checkFlip(endposition);
     }
+
+    //Flip based off of where the player is
+    private void checkFlip(float targetXPosition)
+    {
+		if (targetXPosition > transform.position.x)
+		{
+			transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
+		}
+		else
+		{
+			transform.eulerAngles = new Vector3(transform.eulerAngles.x, 180, transform.eulerAngles.z);
+
+		}
+	}
+    //Flip Based off of what direction we are moving
+    private void checkFlip(Vector2 endposition)
+    {
+		if (endposition.x > 0)
+		{
+			transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
+		}
+		else
+		{
+			transform.eulerAngles = new Vector3(transform.eulerAngles.x, 180, transform.eulerAngles.z);
+
+		}
+	}
 
 
     private void OnTriggerStay2D(Collider2D other)
@@ -154,7 +174,6 @@ public class EnemyController : MonoBehaviour
         // _passiveNoise.Play();
 
         yield return new WaitForSeconds(_damageFrequency);
-        Debug.Log("Attacking player");
         //_damageEffect.SetActive(false);
     }
 
@@ -171,6 +190,7 @@ public class EnemyController : MonoBehaviour
 
         if (Vector3.Distance(_targetPosition.position, transform.position) < attackRange && cooldownTimer <= 0)
         {
+            _movementState = MovementState.attacking;
             _animator.SetTrigger("Attack");
             cooldownTimer = attackCooldown;
         }
@@ -188,5 +208,15 @@ public class EnemyController : MonoBehaviour
     public void attack() 
     {
 		_attacker.Attack(_targetPosition);
+    }
+    public void stopAttack()
+    {
+        _attacker.stopAttack();
+        checkFlip(_targetPosition.position.x);
+
+    }
+    public void attackOver()
+    {
+        _movementState = MovementState.chasing;
     }
 }
