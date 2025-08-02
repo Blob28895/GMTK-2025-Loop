@@ -152,7 +152,7 @@ public class EnemyController : MonoBehaviour
 			_animator.SetFloat("walkAnimSpeed", chaseAnimSpeed);
 		}
 
-        Debug.Log(gameObject.name + " : " + cooldownTimer);
+        //Debug.Log(gameObject.name + " : " + cooldownTimer);
 		if (Vector3.Distance(_targetPosition.position, transform.position) < attackRange && cooldownTimer <= 0)
 		{
 			_animator.SetTrigger("Attack");

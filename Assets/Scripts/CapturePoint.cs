@@ -3,7 +3,16 @@ using UnityEngine;
 
 public class CapturePoint : MonoBehaviour
 {
+    // Must have particle system attached
+    [SerializeField] private GameObject capturePointParticles;
     private int numTriggers = default;
+    private ParticleSystem successParticles;
+
+
+    private void Awake()
+    {
+        successParticles = capturePointParticles.GetComponent<ParticleSystem>();
+    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -34,13 +43,18 @@ public class CapturePoint : MonoBehaviour
 
         CircleCollider2D circleCollider = CreateCircleCollider(lineRenderer);
 
-        CheckIfEnemiesAreInCaptureCircle(circleCollider);
+        if(CheckIfEnemiesAreInCaptureCircle(circleCollider))
+        {
+            GameObject particles = Instantiate(capturePointParticles, transform.position, Quaternion.identity);
+            Destroy(particles, successParticles.totalTime + 3);
+        }
 
         Array.ForEach(ropePoints, ropePoint => { Destroy(ropePoint); });
     }
 
-    private void CheckIfEnemiesAreInCaptureCircle(CircleCollider2D captureCircle)
+    private bool CheckIfEnemiesAreInCaptureCircle(CircleCollider2D captureCircle)
     {
+        bool isEnemyInCircle = false;
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         foreach (GameObject enemy in enemies)
@@ -50,10 +64,13 @@ public class CapturePoint : MonoBehaviour
 
             if (DoCollidersFullyOverlap(enemyCollider, captureCircle))
             {
-                Debug.Log($"Enemy '{enemy.name}' has been captured!");
+                isEnemyInCircle = true;
+                Debug.Log($"Enemy '{enemy.name}' has been hit!");
                 enemy.GetComponent<EnemyController>().Damage(50);
             }
         }
+
+        return isEnemyInCircle;
     }
 
     private CircleCollider2D CreateCircleCollider(LineRenderer lineRenderer)
