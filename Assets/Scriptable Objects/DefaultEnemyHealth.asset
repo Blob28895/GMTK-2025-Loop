@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab987a0ce4d84049a223500da25cacd, type: 3}
   m_Name: DefaultEnemyHealth
   m_EditorClassIdentifier: 
-  _startingHealth: 50
+  _startingHealth: 100
   _timeToWaitForRegen: 500
   _regenIncrementAmount: 0
   _timeBetweenRegenIncrement: 500

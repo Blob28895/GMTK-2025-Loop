@@ -60,11 +60,21 @@ public class EnemyController : MonoBehaviour
     //[SerializeField] private GameObject _deathSoundObject;
 
     [Header("Asset References")]
-    [SerializeField] private HealthSO enemyHealth = default;
+    [Tooltip("Enbemy controller creates an instance of this scriptable object so the original is reusable among multiple enemy instances.")]
+    [SerializeField] private HealthSO healthSettings = default;
+    [SerializeField] private Canvas childCanvas = default;
+    [SerializeField] private HealthBar healthBar = default;
+
+
+    private HealthSO enemyHealth = default;
 
 
     void Start()
     {
+        enemyHealth = Instantiate(healthSettings);
+        childCanvas.worldCamera = Camera.main;
+        healthBar.InitializeHealthBar(enemyHealth);
+
         _targetPosition = GameObject.FindGameObjectWithTag("Player").transform;
         _rb = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -120,7 +130,6 @@ public class EnemyController : MonoBehaviour
         if (endposition.x > 0)
         {
             _spriteRenderer.flipX = false;
-
         }
         else
         {
