@@ -78,7 +78,7 @@ public class EnemyController : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _delta = transform.position;
         _startingPosition = transform.position;
-        _animator = GetComponent<Animator>();
+        _animator = GetComponentInChildren<Animator>();
         _animator.SetBool("moving", true);
         _attacker = GetComponent<Attacker>();
         // _passiveNoise = GetComponent<AudioSource>();
@@ -127,11 +127,11 @@ public class EnemyController : MonoBehaviour
         _rb.MovePosition(_rb.position + endposition * speed * Time.deltaTime);
         if (endposition.x > 0)
         {
-            _spriteRenderer.flipX = false;
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
         }
         else
         {
-            _spriteRenderer.flipX = true;
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 180, transform.eulerAngles.z);
 
         }
     }
