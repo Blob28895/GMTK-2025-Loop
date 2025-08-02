@@ -174,6 +174,7 @@ public class EnemyController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Attacking player");
             StartCoroutine(AttackPlayer(other, _damage));
         }
     }
@@ -187,6 +188,7 @@ public class EnemyController : MonoBehaviour
         }
 
         HealthSO playerHealth = playerCollider.GetComponent<PlayerController>().health;
+        
         playerHealth.Damage(_damage);
         // _passiveNoise.Play();
 
