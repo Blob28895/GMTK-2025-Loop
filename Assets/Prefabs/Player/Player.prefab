@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 60241847111563608}
   - component: {fileID: 4101471879840246547}
   m_Layer: 0
-  m_Name: Aniamtor
+  m_Name: Animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
