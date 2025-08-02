@@ -126,12 +126,26 @@ public class EnemyController : MonoBehaviour
     {
 
         _rb.MovePosition(_rb.position + endposition * speed * Time.deltaTime);
-        checkFlip(endposition.x);
+        checkFlip(endposition);
     }
 
+    //Flip based off of where the player is
     private void checkFlip(float targetXPosition)
     {
 		if (targetXPosition > transform.position.x)
+		{
+			transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
+		}
+		else
+		{
+			transform.eulerAngles = new Vector3(transform.eulerAngles.x, 180, transform.eulerAngles.z);
+
+		}
+	}
+    //Flip Based off of what direction we are moving
+    private void checkFlip(Vector2 endposition)
+    {
+		if (endposition.x > 0)
 		{
 			transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
 		}
