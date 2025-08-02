@@ -53,8 +53,8 @@ public class PlayerController : MonoBehaviour
 
 	private void OnRun(Vector2 movementInput)
 	{
-		if (movementInput.x > 0) { _spriteRenderer.flipX = false; }
-		else if (movementInput.x < 0) { _spriteRenderer.flipX = true; }
+		if (movementInput.x > 0) { _spriteRenderer.flipX = true; }
+		else if (movementInput.x < 0) { _spriteRenderer.flipX = false; }
 
 		_inputVector = movementInput;
 	}
