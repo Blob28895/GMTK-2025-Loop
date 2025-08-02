@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1963601416478244747, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1963601416478244747, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2654871861760754156, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_Controller
@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8080129172691440808, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddeb96e8089d480489e0dbf2e76d79f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lungeDistance: 1
   lungeSpeed: 10
   lungeDamage: 10
   attacking: 0
