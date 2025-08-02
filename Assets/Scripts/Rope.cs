@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Rope : MonoBehaviour
 {
-    public LineRenderer lineRenderer;
-    public EdgeCollider2D edgeCollider;
+    [SerializeField] private int maxNumPoints = 80;
+    [SerializeField] private LineRenderer lineRenderer;
+    [SerializeField] private EdgeCollider2D edgeCollider;
 
     private List<Vector2> points = new List<Vector2>();
 
@@ -19,6 +20,11 @@ public class Rope : MonoBehaviour
         if (lineRenderer.positionCount == 0)
         {
             return true;
+        }
+
+        if (lineRenderer.positionCount > maxNumPoints)
+        {
+            return false;
         }
 
         return Vector2.Distance(lineRenderer.GetPosition(lineRenderer.positionCount - 1), position) > 0.1f; 
@@ -36,4 +42,9 @@ public class Rope : MonoBehaviour
         lineRenderer.SetPosition(lineRenderer.positionCount - 1, position);
         edgeCollider.points = points.ToArray();
     }
+
+    //private void OnDestroy()
+    //{
+    //    Debug.Log(lineRenderer.positionCount);
+    //}
 }
