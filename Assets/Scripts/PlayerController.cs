@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] public HealthSO health;
 	[SerializeField] private InputReaderSO _inputReader = default;
-	 private SpriteRenderer _spriteRenderer = default;
+	private CapturedEnemyContainer _capturedEnemyContainer;
+	private SpriteRenderer _spriteRenderer = default;
 	private Animator _animator;
 
 	public int speed = 5;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
 
 	void Awake()	
 	{
+		_capturedEnemyContainer = GetComponent<CapturedEnemyContainer>();
 		rb = GetComponent<Rigidbody2D>();
 		_spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 		_inputReader.EnableGameplayInput();
@@ -110,8 +112,11 @@ public class PlayerController : MonoBehaviour
 		if (count == 0)
 		{
 			rb.MovePosition(rb.position + vec * speed * Time.fixedDeltaTime);
+			_capturedEnemyContainer.SetMovementState(EnemyController.MovementState.wandering);
 			return true;
 		}
+
+		_capturedEnemyContainer.SetMovementState(EnemyController.MovementState.idle);
 		return false;
 	}
 

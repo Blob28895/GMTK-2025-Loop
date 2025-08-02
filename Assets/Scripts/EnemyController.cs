@@ -10,7 +10,8 @@ public class EnemyController : MonoBehaviour
     {
         wandering,
         chasing,
-        attacking
+        attacking,
+        idle,
     }
 
     public interface Attacker
@@ -28,6 +29,7 @@ public class EnemyController : MonoBehaviour
     private float cooldownTimer = 0f;
     private Attacker _attacker;
     public MovementState _movementState { get; set; }
+    public bool isCaptured = false;
 
     [Header("Damage Settings")]
     [SerializeField] private float _damageFrequency = 1f;
@@ -168,6 +170,10 @@ public class EnemyController : MonoBehaviour
     private IEnumerator AttackPlayer(Collider2D playerCollider, int damage)
     {
         //_damageEffect.SetActive(true);
+        if (isCaptured)
+        {
+            yield break;
+        }
 
         HealthSO playerHealth = playerCollider.GetComponent<PlayerController>().health;
         playerHealth.Damage(_damage);
@@ -188,6 +194,11 @@ public class EnemyController : MonoBehaviour
             _animator.SetFloat("walkAnimSpeed", chaseAnimSpeed);
         }
 
+        if (_movementState == MovementState.idle)
+        {
+            _animator.SetFloat("walkingAnimSpeed", 0);
+        }
+
         if (Vector3.Distance(_targetPosition.position, transform.position) < attackRange && cooldownTimer <= 0)
         {
             _movementState = MovementState.attacking;
@@ -196,13 +207,16 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    public void Damage(int damageAmount)
+    public bool Damage(int damageAmount)
     {
         enemyHealth.Damage(damageAmount);
+
         if (enemyHealth.isDead())
         {
-            Destroy(gameObject);
+            Destroy(healthBar.gameObject); healthBar = null;
         }
+
+        return enemyHealth.isDead();
     }
 
     public void attack() 

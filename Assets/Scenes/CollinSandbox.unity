@@ -268,6 +268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4091751815162234097, guid: 132f8e701f62231438e4f8068408379a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4938609014582699632, guid: 132f8e701f62231438e4f8068408379a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.27628
