@@ -16,6 +16,7 @@ public class EnemyController : MonoBehaviour
     public interface Attacker
     {
         void Attack(Transform targetPosition);
+        void stopAttack();
     }
 
     private Transform _targetPosition;
@@ -97,7 +98,7 @@ public class EnemyController : MonoBehaviour
             _movementState = MovementState.chasing;
             move(new Vector2(direction.x, direction.y), chaseSpeed);
         }
-        else
+        else if(_movementState != MovementState.attacking)
         {
             wander();
         }
@@ -154,7 +155,6 @@ public class EnemyController : MonoBehaviour
         // _passiveNoise.Play();
 
         yield return new WaitForSeconds(_damageFrequency);
-        Debug.Log("Attacking player");
         //_damageEffect.SetActive(false);
     }
 
@@ -171,6 +171,7 @@ public class EnemyController : MonoBehaviour
 
         if (Vector3.Distance(_targetPosition.position, transform.position) < attackRange && cooldownTimer <= 0)
         {
+            _movementState = MovementState.attacking;
             _animator.SetTrigger("Attack");
             cooldownTimer = attackCooldown;
         }
@@ -188,5 +189,10 @@ public class EnemyController : MonoBehaviour
     public void attack() 
     {
 		_attacker.Attack(_targetPosition);
+    }
+    public void stopAttack()
+    {
+        _attacker.stopAttack();
+        _movementState = MovementState.chasing;
     }
 }
