@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public HealthSO health;
 	[SerializeField] private InputReaderSO _inputReader = default;
 	 private SpriteRenderer _spriteRenderer = default;
+	private Animator _animator;
 
 	public int speed = 5;
 	private bool canMove = true;
@@ -29,8 +30,9 @@ public class PlayerController : MonoBehaviour
 	void Awake()	
 	{
 		rb = GetComponent<Rigidbody2D>();
-		_spriteRenderer = GetComponent<SpriteRenderer>();
+		_spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 		_inputReader.EnableGameplayInput();
+		_animator = GetComponentInChildren<Animator>();
 		//audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
 
 		//nextLevelName = getNextLevel(SceneManager.GetActiveScene().name);
@@ -72,6 +74,14 @@ public class PlayerController : MonoBehaviour
 		float verticalInput = _inputVector.y;
 
 		Vector2 movement = new Vector2(horizontalInput, verticalInput).normalized;
+		if(movement == new Vector2(0, 0))
+		{
+			_animator.SetBool("moving", false);
+		}
+		else
+		{
+			_animator.SetBool("moving", true);
+		}
 
 		bool success = movePlayer(movement);
 		if (!success)
