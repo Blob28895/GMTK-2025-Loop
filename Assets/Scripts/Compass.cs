@@ -23,12 +23,6 @@ public class Compass : MonoBehaviour
         angle -= 90f;
         Debug.Log(angle);
         _needleTransform.eulerAngles = new Vector3(0, 0, angle);
-        ChangeFarmDirection();
     }
 
-
-    public void ChangeFarmDirection()
-    {
-
-    }
 }
