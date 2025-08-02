@@ -6,8 +6,8 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Chicken
+  m_Name: Bull Override
   m_Controller: {fileID: 9100000, guid: 16e693500ec5ea548be7a2e55ba062a9, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: d0860b423b72b594fb8ca2e592e3759d, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: be347cd0193dc184ba33aa52ac4003c8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5c506551e7f278948a1beab5247fa232, type: 2}
