@@ -268,6 +268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4091751815162234097, guid: 132f8e701f62231438e4f8068408379a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4938609014582699632, guid: 132f8e701f62231438e4f8068408379a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.27628
@@ -371,6 +375,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4866413458049513085, guid: cdc5cb93f0d812946a83e818f45b8e74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9130974946961986339, guid: cdc5cb93f0d812946a83e818f45b8e74, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9130974946961986339, guid: cdc5cb93f0d812946a83e818f45b8e74, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

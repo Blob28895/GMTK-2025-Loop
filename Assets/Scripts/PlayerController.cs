@@ -8,9 +8,10 @@ using Unity.VisualScripting;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] public HealthSO health;
+	[SerializeField] public HealthSO health;
 	[SerializeField] private InputReaderSO _inputReader = default;
-	 private SpriteRenderer _spriteRenderer = default;
+	private CapturedEnemyContainer _capturedEnemyContainer;
+	private SpriteRenderer _spriteRenderer = default;
 	private Animator _animator;
 
 	public int speed = 5;
@@ -25,10 +26,12 @@ public class PlayerController : MonoBehaviour
 
 	private Vector2 _inputVector;
 	//private AudioManager audioManager;
+	[SerializeField] private HealthBar healthBar = default;
 
 
-	void Awake()	
+	void Awake()
 	{
+		_capturedEnemyContainer = GetComponent<CapturedEnemyContainer>();
 		rb = GetComponent<Rigidbody2D>();
 		_spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 		_inputReader.EnableGameplayInput();
@@ -37,6 +40,13 @@ public class PlayerController : MonoBehaviour
 
 		//nextLevelName = getNextLevel(SceneManager.GetActiveScene().name);
 	}
+
+	private void Start()
+	{
+		healthBar.InitializeHealthBar(health);
+	}
+
+
 	private void Update()
 	{
 	}
@@ -74,7 +84,7 @@ public class PlayerController : MonoBehaviour
 		float verticalInput = _inputVector.y;
 
 		Vector2 movement = new Vector2(horizontalInput, verticalInput).normalized;
-		if(movement == new Vector2(0, 0))
+		if (movement == new Vector2(0, 0))
 		{
 			_animator.SetBool("moving", false);
 		}
@@ -110,8 +120,11 @@ public class PlayerController : MonoBehaviour
 		if (count == 0)
 		{
 			rb.MovePosition(rb.position + vec * speed * Time.fixedDeltaTime);
+			_capturedEnemyContainer.SetMovementState(EnemyController.MovementState.wandering);
 			return true;
 		}
+
+		_capturedEnemyContainer.SetMovementState(EnemyController.MovementState.idle);
 		return false;
 	}
 
@@ -119,6 +132,4 @@ public class PlayerController : MonoBehaviour
 	{
 		canMove = b;
 	}
-
-
 }

@@ -7,6 +7,7 @@ public class CapturePoint : MonoBehaviour
     [SerializeField] private GameObject capturePointParticles;
     private int numTriggers = default;
     private ParticleSystem successParticles;
+    private CapturedEnemyContainer enemyContainer = null;
 
 
     private void Awake()
@@ -66,11 +67,28 @@ public class CapturePoint : MonoBehaviour
             {
                 isEnemyInCircle = true;
                 Debug.Log($"Enemy '{enemy.name}' has been hit!");
-                enemy.GetComponent<EnemyController>().Damage(50);
+                bool isDead = enemy.GetComponent<EnemyController>().Damage(50);
+
+                if(isDead)
+                {
+                    CaptureEnemy(enemy);
+                }
             }
         }
 
         return isEnemyInCircle;
+    }
+
+    // GameObject passed as param MUST have EnemyController attached to it
+    private void CaptureEnemy(GameObject enemy)
+    {
+        if (enemyContainer == null)
+        {
+            GameObject[] objectsTaggedAsPlayer = GameObject.FindGameObjectsWithTag("Player");
+            enemyContainer = objectsTaggedAsPlayer[0].GetComponent<CapturedEnemyContainer>();
+        }
+        
+        enemyContainer.AddEnemy(enemy);
     }
 
     private CircleCollider2D CreateCircleCollider(LineRenderer lineRenderer)
