@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a27dfec0293c24aaaa7d02f71ae374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxNumPoints: 160
   lineRenderer: {fileID: 3647382758193581303}
   edgeCollider: {fileID: 6693671812347437112}
 --- !u!1 &1755710730286263518
