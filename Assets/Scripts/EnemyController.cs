@@ -100,6 +100,17 @@ public class EnemyController : MonoBehaviour
             _movementState = MovementState.chasing;
             move(new Vector2(direction.x, direction.y), chaseSpeed);
         }
+
+        if ( //If we are idle and the player is in aggro range, or if we are chasing and the player isnt out of aggro range
+            _movementState == MovementState.idle && Vector3.Distance(_targetPosition.position, transform.position) <= aggroRange ||
+            _movementState == MovementState.chasing && Vector3.Distance(_targetPosition.position, transform.position) <= loseAggroRange)
+        {
+            Vector3 direction = (_targetPosition.position - transform.position).normalized;
+            _movementState = MovementState.chasing;
+            move(new Vector2(direction.x, direction.y), chaseSpeed);
+        }
+
+
         else if(_movementState != MovementState.attacking)
         {
             wander();
