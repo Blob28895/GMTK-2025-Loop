@@ -25,4 +25,9 @@ public class AnimatorToEnemyController : MonoBehaviour
     {
         _enemyController.stopAttack();
     }
+
+    void controllerAttackOver()
+    {
+        _enemyController.attackOver();
+    }
 }

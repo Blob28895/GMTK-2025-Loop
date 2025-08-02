@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1963601416478244747, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1963601416478244747, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2654871861760754156, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_Controller
@@ -22,11 +22,11 @@ PrefabInstance:
       objectReference: {fileID: 22100000, guid: 13aeb2f5ad108f34ca6e6cd3e856e252, type: 2}
     - target: {fileID: 3134057025788562968, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.27628
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3134057025788562968, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.49966
+      value: -18.74
       objectReference: {fileID: 0}
     - target: {fileID: 3134057025788562968, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -72,8 +72,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8080129172691440808, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8080129172691440808, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8675721613717902404}
   m_SourcePrefab: {fileID: 100100000, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+--- !u!1 &2293876289809218752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8080129172691440808, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+  m_PrefabInstance: {fileID: 8067951312543656040}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8675721613717902404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2293876289809218752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddeb96e8089d480489e0dbf2e76d79f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lungeDistance: 1
+  lungeSpeed: 10
+  lungeDamage: 10
+  attacking: 0

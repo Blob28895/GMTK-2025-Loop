@@ -126,16 +126,21 @@ public class EnemyController : MonoBehaviour
     {
 
         _rb.MovePosition(_rb.position + endposition * speed * Time.deltaTime);
-        if (endposition.x > 0)
-        {
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
-        }
-        else
-        {
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 180, transform.eulerAngles.z);
-
-        }
+        checkFlip(endposition.x);
     }
+
+    private void checkFlip(float targetXPosition)
+    {
+		if (targetXPosition > transform.position.x)
+		{
+			transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
+		}
+		else
+		{
+			transform.eulerAngles = new Vector3(transform.eulerAngles.x, 180, transform.eulerAngles.z);
+
+		}
+	}
 
 
     private void OnTriggerStay2D(Collider2D other)
@@ -193,6 +198,11 @@ public class EnemyController : MonoBehaviour
     public void stopAttack()
     {
         _attacker.stopAttack();
+        checkFlip(_targetPosition.position.x);
+
+    }
+    public void attackOver()
+    {
         _movementState = MovementState.chasing;
     }
 }
