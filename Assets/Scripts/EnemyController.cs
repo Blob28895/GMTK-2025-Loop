@@ -62,7 +62,6 @@ public class EnemyController : MonoBehaviour
     [Header("Asset References")]
     [Tooltip("Enbemy controller creates an instance of this scriptable object so the original is reusable among multiple enemy instances.")]
     [SerializeField] private HealthSO healthSettings = default;
-    [SerializeField] private Canvas childCanvas = default;
     [SerializeField] private HealthBar healthBar = default;
 
 
@@ -72,7 +71,6 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         enemyHealth = Instantiate(healthSettings);
-        childCanvas.worldCamera = Camera.main;
         healthBar.InitializeHealthBar(enemyHealth);
 
         _targetPosition = GameObject.FindGameObjectWithTag("Player").transform;
