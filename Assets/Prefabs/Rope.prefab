@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4436083252905324801}
   - component: {fileID: 3647382758193581303}
   - component: {fileID: 2117407709627360110}
+  - component: {fileID: 1178347190007748499}
   m_Layer: 0
   m_Name: Rope
   m_TagString: Rope
@@ -58,7 +59,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e578b3e295045824bad7c8b6485c3698, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100,7 +101,7 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.26, g: 0.1937, b: 0.1274, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -108,7 +109,7 @@ LineRenderer:
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 65535
+      ctime0: 0
       ctime1: 65535
       ctime2: 0
       ctime3: 0
@@ -154,6 +155,18 @@ MonoBehaviour:
   maxNumPoints: 160
   lineRenderer: {fileID: 3647382758193581303}
   edgeCollider: {fileID: 6693671812347437112}
+--- !u!114 &1178347190007748499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181671848875960511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aec29daec327d340bb1b371e8c91080, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1755710730286263518
 GameObject:
   m_ObjectHideFlags: 0
