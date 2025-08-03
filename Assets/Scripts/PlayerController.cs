@@ -132,4 +132,17 @@ public class PlayerController : MonoBehaviour
 	{
 		canMove = b;
 	}
+
+	public void Damage(int damageAmount)
+	{
+		health.Damage(damageAmount);
+
+		if(health.isDead())
+		{
+            _capturedEnemyContainer.resetEnemyLocations();
+            _capturedEnemyContainer.resetCapturedEnemies();
+			transform.position = Vector2.zero;
+			health.resetHealth();
+		}
+	}
 }

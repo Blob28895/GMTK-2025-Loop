@@ -196,9 +196,9 @@ public class EnemyController : MonoBehaviour
             yield break;
         }
 
-        HealthSO playerHealth = playerCollider.GetComponent<PlayerController>().health;
+        PlayerController playerController = playerCollider.GetComponent<PlayerController>();
         
-        playerHealth.Damage(_damage);
+        playerController.Damage(_damage);
         // _passiveNoise.Play();
 
         yield return new WaitForSeconds(_damageFrequency);
@@ -275,5 +275,16 @@ public class EnemyController : MonoBehaviour
         wanderDistance = 1f;
 
         wanderDirectionChangeCooldown = 0f;
+    }
+
+    public void freeFromCaptivity()
+    {
+        isInCaptivity = false;
+        isCaptured = false;
+        transform.SetParent(null, false);
+        transform.position = _startingPosition;
+        wanderDistance = 5f; // TODO: Fix this to original later
+        wanderDirectionChangeCooldown = 2f; // TODO: fix this to original later
+
     }
 }
