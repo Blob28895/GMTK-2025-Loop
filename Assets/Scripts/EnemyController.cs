@@ -78,8 +78,11 @@ public class EnemyController : MonoBehaviour
 
     private HealthSO enemyHealth = default;
 
+    // I hate this solution but its how im gonna solve enemies teleporting on start
+    private float startClock;
 
-    void Start()
+
+    void Awake()
     {
         enemyHealth = Instantiate(healthSettings);
         healthBar.InitializeHealthBar(enemyHealth);
@@ -93,15 +96,18 @@ public class EnemyController : MonoBehaviour
         _animator.SetBool("moving", true);
         _attacker = GetComponent<Attacker>();
 
+        transform.position = _startingPosition;
         if(_passiveNoise != null)
         {
             StartCoroutine(PassiveNoiseRoutine());
         }
+
+        startClock = 5f;
     }
 
     private void FixedUpdate()
     {
-
+        if (startClock > 0) { startClock -= Time.deltaTime; }
         if (isInCaptivity)
         {
             wander();
@@ -148,7 +154,13 @@ public class EnemyController : MonoBehaviour
 
             _delta = (targetPosition - transform.position).normalized;
 
-            wanderDirectionChangeCooldown = UnityEngine.Random.Range(1f, 5f);
+
+            //Stupid solution to fixing the teleporting on start issue, this way the animals will be on the map in reasonable positions when playing the game
+            if(Vector3.Distance(transform.position, _startingPosition) > 50 && startClock > 0 && !isCaptured)
+            {
+                transform.position = _startingPosition;
+            }
+			wanderDirectionChangeCooldown = UnityEngine.Random.Range(1f, 5f);
         }
         move(new Vector2(_delta.x, _delta.y), wanderSpeed);
     }

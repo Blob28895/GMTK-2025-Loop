@@ -20,7 +20,7 @@ public class AnimalReleaseArea : MonoBehaviour
         List<EnemyController> enemies = enemyContainer.getCapturedEnemies();
         enemyContainer.resetCapturedEnemies();
 
-        Debug.Log("Releasing " + enemies.Count + " animals.");
+        //Debug.Log("Releasing " + enemies.Count + " animals.");
 
         foreach (EnemyController enemy in enemies)
         {

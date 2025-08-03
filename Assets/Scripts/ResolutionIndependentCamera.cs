@@ -35,7 +35,7 @@ public class ResolutionIndependentCamera : MonoBehaviour
         float screenAspectRatio = (float)Screen.width / (float)Screen.height;
 
         // Calculate the required orthographic size to fit the target width
-        float requiredOrthographicSize = targetWidth / screenAspectRatio / 2.0f;
+        float requiredOrthographicSize = targetWidth / screenAspectRatio ;
 
         // Set the camera's size
         _camera.orthographicSize = requiredOrthographicSize;

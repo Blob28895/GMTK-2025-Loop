@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 3184159518366690391, guid: 459a6c158e6aa78458cd60e114a006b3, type: 3}
+    - target: {fileID: 1963601416478244747, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963601416478244747, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2654871861760754156, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_Controller
       value: 
@@ -111,6 +119,10 @@ PrefabInstance:
     - target: {fileID: 8080129172691440808, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_Name
       value: Sheep Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8080129172691440808, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
