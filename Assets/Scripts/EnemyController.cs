@@ -321,7 +321,7 @@ public class EnemyController : MonoBehaviour
             yield return new WaitForSeconds(randomDelay);
 
             // Make sure the AudioSource exists and isn't already playing a sound.
-            if (_passiveNoise != null && !_passiveNoise.isPlaying)
+            if (_passiveNoise != null && !_passiveNoise.isPlaying && Vector2.Distance(transform.position, _targetPosition.position) < 20)
             {
                 _passiveNoise.Play();
             }
