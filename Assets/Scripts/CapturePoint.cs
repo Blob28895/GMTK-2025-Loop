@@ -91,7 +91,7 @@ public class CapturePoint : MonoBehaviour
             GameObject[] objectsTaggedAsPlayer = GameObject.FindGameObjectsWithTag("Player");
             enemyContainer = objectsTaggedAsPlayer[0].GetComponent<CapturedEnemyContainer>();
         }
-        
+
         enemyContainer.AddEnemy(enemy);
     }
 
