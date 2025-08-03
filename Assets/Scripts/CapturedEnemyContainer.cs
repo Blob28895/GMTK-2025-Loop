@@ -32,4 +32,12 @@ public class CapturedEnemyContainer : MonoBehaviour
     {
         _capturedEnemies = new List<EnemyController>();
     }
+
+    public void resetEnemyLocations()
+    {
+        foreach (EnemyController enemy in _capturedEnemies)
+        {
+            enemy.freeFromCaptivity();
+        }
+    }
 }
