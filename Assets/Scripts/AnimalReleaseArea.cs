@@ -25,10 +25,7 @@ public class AnimalReleaseArea : MonoBehaviour
         foreach (EnemyController enemy in enemies)
         {
             Transform releasePoint = releasePoints[UnityEngine.Random.Range(0, releasePoints.Length)];
-
-            enemy._movementState = EnemyController.MovementState.wandering;
-            enemy.gameObject.transform.SetParent(null, true);
-            enemy.gameObject.transform.position = releasePoint.position;
+            enemy.makeCaptive(releasePoint);
         }
     }
 }

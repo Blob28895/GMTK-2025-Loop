@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Unity.VisualScripting;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class EnemyController : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class EnemyController : MonoBehaviour
     private Attacker _attacker;
     public MovementState _movementState { get; set; }
     public bool isCaptured = false;
+    public bool isInCaptivity = false;
 
     [Header("Damage Settings")]
     [SerializeField] private float _damageFrequency = 1f;
@@ -90,6 +92,12 @@ public class EnemyController : MonoBehaviour
     private void FixedUpdate()
     {
 
+        if (isInCaptivity)
+        {
+            wander();
+            return;
+        }
+
         if (cooldownTimer > 0) { cooldownTimer -= Time.deltaTime; }
 
         if ( //If we are wandering and the player is in aggro range, or if we are chasing and the player isnt out of aggro range
@@ -132,6 +140,7 @@ public class EnemyController : MonoBehaviour
 
             wanderDirectionChangeCooldown = UnityEngine.Random.Range(1f, 5f);
         }
+        Debug.Log("Wandering to " + new Vector2(_delta.x, _delta.y));
         move(new Vector2(_delta.x, _delta.y), wanderSpeed);
     }
 
@@ -234,6 +243,10 @@ public class EnemyController : MonoBehaviour
 
     public void attack() 
     {
+        if (isCaptured)
+        {
+            return;
+        }
 		_attacker.Attack(_targetPosition);
     }
     public void stopAttack()
@@ -244,6 +257,23 @@ public class EnemyController : MonoBehaviour
     }
     public void attackOver()
     {
+        if (isCaptured)
+        {
+            return;
+        }
         _movementState = MovementState.chasing;
+    }
+
+    public void makeCaptive(Transform releasePoint)
+    {
+        isCaptured = true;
+        isInCaptivity = true;
+        _startingPosition = releasePoint.position;
+        transform.position = releasePoint.position;
+        _movementState = MovementState.wandering;
+        transform.SetParent(null, false);
+        wanderDistance = 1f;
+
+        wanderDirectionChangeCooldown = 0f;
     }
 }
