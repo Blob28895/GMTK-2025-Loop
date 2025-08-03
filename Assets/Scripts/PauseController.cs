@@ -12,20 +12,15 @@ public class PauseController : MonoBehaviour
 	[SerializeField] private InputReaderSO _inputReader = default;
 	[SerializeField] private GameObject _pauseBook;
 	[SerializeField] private GameObject _mainPage;
+	[SerializeField] private GameObject _upgradesPage;
 	[SerializeField] private List<GameObject> _compendiumPages;
 
-	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
 	{
 		_inputReader.EnableGameplayInput();
 		_pauseBook.SetActive(false);
 	}
 
-	// Update is called once per frame
-	void Update()
-	{
-
-	}
 
 	private void OnEnable()
 	{
@@ -57,5 +52,11 @@ public class PauseController : MonoBehaviour
 	{
 		_mainPage.SetActive(false);
 		_compendiumPages[index].SetActive(true);
+	}
+
+	public void openUpgradesPage()
+	{
+		_mainPage.SetActive(false);
+		_upgradesPage.SetActive(true);
 	}
 }
