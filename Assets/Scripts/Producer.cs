@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 public class Producer : MonoBehaviour
 {
-
+    [Serializable]
     public enum Product
     {
         feathers,
