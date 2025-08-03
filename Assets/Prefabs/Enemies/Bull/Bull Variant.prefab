@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lungeSpeed: 25
-  lungeDamage: 10
+  lungeDamage: 150
   attacking: 0
 --- !u!82 &3313593202832965556 stripped
 AudioSource:
