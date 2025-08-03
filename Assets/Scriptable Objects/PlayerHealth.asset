@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startingHealth: 100
   _timeToWaitForRegen: 5
-  _regenIncrementAmount: 1
+  _regenIncrementAmount: 25
   _timeBetweenRegenIncrement: 1
