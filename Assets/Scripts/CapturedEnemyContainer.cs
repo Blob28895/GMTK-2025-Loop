@@ -30,6 +30,6 @@ public class CapturedEnemyContainer : MonoBehaviour
 
     public void resetCapturedEnemies()
     {
-        _capturedEnemies.Clear();
+        _capturedEnemies = new List<EnemyController>();
     }
 }
