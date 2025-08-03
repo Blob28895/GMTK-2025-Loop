@@ -45,6 +45,7 @@ public class PauseController : MonoBehaviour
 		{
 			_mainPage.SetActive(true);
 			disableAllCompendiumPages();
+			_upgradesPage.SetActive(false);
 		}
 	}
 
