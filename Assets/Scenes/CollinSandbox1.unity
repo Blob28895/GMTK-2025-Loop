@@ -800,6 +800,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 713438537611215846, guid: 9c0ea99cacaf9f94c84fb8dafac3bac8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5828
+      objectReference: {fileID: 0}
+    - target: {fileID: 713438537611215846, guid: 9c0ea99cacaf9f94c84fb8dafac3bac8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5828
+      objectReference: {fileID: 0}
+    - target: {fileID: 713438537611215846, guid: 9c0ea99cacaf9f94c84fb8dafac3bac8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5828
+      objectReference: {fileID: 0}
+    - target: {fileID: 713438537611215846, guid: 9c0ea99cacaf9f94c84fb8dafac3bac8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -173
+      objectReference: {fileID: 0}
+    - target: {fileID: 713438537611215846, guid: 9c0ea99cacaf9f94c84fb8dafac3bac8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 272
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979566502322031167, guid: 9c0ea99cacaf9f94c84fb8dafac3bac8, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979566502322031167, guid: 9c0ea99cacaf9f94c84fb8dafac3bac8, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 6248970996823660030, guid: 9c0ea99cacaf9f94c84fb8dafac3bac8, type: 3}
       propertyPath: m_Name
       value: UI Canvas

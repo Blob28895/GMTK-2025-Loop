@@ -90,11 +90,11 @@ PrefabInstance:
       objectReference: {fileID: 2611283509269919296}
     - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: _maxPassiveNoiseDelay
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: _minPassiveNoiseDelay
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8080129172691440808, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_Name

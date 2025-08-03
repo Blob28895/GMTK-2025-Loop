@@ -281,7 +281,7 @@ public class EnemyController : MonoBehaviour
         transform.position = releasePoint.position;
         _movementState = MovementState.wandering;
         transform.SetParent(null, false);
-        wanderDistance = 1f;
+        wanderDistance = .1f;
 
         wanderDirectionChangeCooldown = 0f;
     }
