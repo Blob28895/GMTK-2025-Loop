@@ -69,9 +69,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: 71eee21ad4b5cfe43bba274ff78950b1, type: 2}
     - target: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: Priority
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 0f4198b32675d074d8d1a8afff1a6d0a, type: 3}
+    - target: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: attackRange
       value: 8

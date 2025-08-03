@@ -150,7 +150,6 @@ public class EnemyController : MonoBehaviour
 
             wanderDirectionChangeCooldown = UnityEngine.Random.Range(1f, 5f);
         }
-        Debug.Log("Wandering to " + new Vector2(_delta.x, _delta.y));
         move(new Vector2(_delta.x, _delta.y), wanderSpeed);
     }
 

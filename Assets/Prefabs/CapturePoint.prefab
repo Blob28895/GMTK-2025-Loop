@@ -47,6 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   capturePointParticles: {fileID: 8642846434459299699, guid: 89bd4546d3ba78f45ae2e25b21751032, type: 3}
+  hitAudio: {fileID: 8300000, guid: 76f1f6d7edb2be545b8b693bffc64f5d, type: 3}
+  captureAudio: {fileID: 8300000, guid: ab2b51a5dca1660498588c68a6a980cd, type: 3}
 --- !u!58 &1791820848347394381
 CircleCollider2D:
   m_ObjectHideFlags: 0

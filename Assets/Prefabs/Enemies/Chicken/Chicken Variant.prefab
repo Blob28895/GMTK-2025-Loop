@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3134057025788562968, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.74
+      value: -32.41
       objectReference: {fileID: 0}
     - target: {fileID: 3134057025788562968, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -64,9 +64,37 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: 13aeb2f5ad108f34ca6e6cd3e856e252, type: 2}
+    - target: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: Priority
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ad3ae0f7b25e43438b73768f0d838e6, type: 3}
+    - target: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: aggroRange
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: _passiveNoise
+      value: 
+      objectReference: {fileID: 2611283509269919296}
+    - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: _maxPassiveNoiseDelay
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: _minPassiveNoiseDelay
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8080129172691440808, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_Name
@@ -104,3 +132,8 @@ MonoBehaviour:
   lungeSpeed: 10
   lungeDamage: 10
   attacking: 0
+--- !u!82 &2611283509269919296 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+  m_PrefabInstance: {fileID: 8067951312543656040}
+  m_PrefabAsset: {fileID: 0}

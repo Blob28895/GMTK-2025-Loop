@@ -21,7 +21,6 @@ public class Compass : MonoBehaviour
         directionVector = (_farmLocation.position - _playerLocation.position).normalized;
         float angle = Mathf.Atan2(directionVector.y, directionVector.x) * Mathf.Rad2Deg;
         angle -= 90f;
-        Debug.Log(angle);
         _needleTransform.eulerAngles = new Vector3(0, 0, angle);
     }
 

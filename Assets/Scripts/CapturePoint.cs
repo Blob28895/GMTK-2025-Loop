@@ -10,6 +10,16 @@ public class CapturePoint : MonoBehaviour
     private CapturedEnemyContainer enemyContainer = null;
 
 
+    [SerializeField] private AudioClip hitAudio = default;
+    [SerializeField] private AudioClip captureAudio = default;
+    private enum AudioState
+    {
+        NONE,
+        CAPTURE,
+        HIT,
+    }
+
+
     private void Awake()
     {
         successParticles = capturePointParticles.GetComponent<ParticleSystem>();
@@ -60,6 +70,7 @@ public class CapturePoint : MonoBehaviour
         bool isEnemyInCircle = false;
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
+        AudioState audioState = AudioState.NONE;
         foreach (GameObject enemy in enemies)
         {
             Collider2D enemyCollider = enemy.GetComponent<Collider2D>();
@@ -67,6 +78,10 @@ public class CapturePoint : MonoBehaviour
 
             if (DoCollidersFullyOverlap(enemyCollider, captureCircle))
             {
+                // Don't overwrite more important audio cue
+                if (audioState != AudioState.CAPTURE) { audioState = AudioState.HIT;  }
+
+
                 isEnemyInCircle = true;
                 Debug.Log($"Enemy '{enemy.name}' has been hit!");
                 EnemyController enemyController = enemy.GetComponent<EnemyController>();
@@ -74,11 +89,14 @@ public class CapturePoint : MonoBehaviour
 
                 if(isDead)
                 {
+                    audioState = AudioState.CAPTURE;
                     enemyController.isCaptured = true;
                     CaptureEnemy(enemy);
                 }
             }
         }
+
+        playAudio(audioState);
 
         return isEnemyInCircle;
     }
@@ -156,5 +174,13 @@ public class CapturePoint : MonoBehaviour
         Bounds innerBounds = enemyCollider.bounds;
         Vector2 farthestPoint = innerBounds.ClosestPoint(circleCenter + (circleCenter - (Vector2)innerBounds.center).normalized * circleRadius * 2);
         return Vector2.Distance(circleCenter, farthestPoint) < circleRadius;
+    }
+
+    private void playAudio(AudioState audioState)
+    {
+        if(audioState == AudioState.HIT)
+        {
+            AudioPlayer.PlayClipAtPoint(hitAudio, new Vector3(transform.position.x, transform.position.y, 0), .5f);
+        }
     }
 }
