@@ -59,8 +59,14 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] private float attackCooldown = 5f;
 
-    //[Header("Audio")]
-    // [SerializeField] private AudioSource _passiveNoise;
+    [Header("Audio")]
+    [SerializeField] private AudioSource _passiveNoise;
+    [Tooltip("The minimum time (in seconds) to wait before playing the passive sound.")]
+    [SerializeField] private float _minPassiveNoiseDelay = 3f;
+    [Tooltip("The maximum time (in seconds) to wait before playing the passive sound.")]
+    [SerializeField] private float _maxPassiveNoiseDelay = 10f;
+
+
     //[Tooltip("Object that will spawn to play the enemy death noise when an enemy dies. Since it cant be playing a sound while also destroying itself")]
     //[SerializeField] private GameObject _deathSoundObject;
 
@@ -86,7 +92,11 @@ public class EnemyController : MonoBehaviour
         _animator = GetComponentInChildren<Animator>();
         _animator.SetBool("moving", true);
         _attacker = GetComponent<Attacker>();
-        // _passiveNoise = GetComponent<AudioSource>();
+
+        if(_passiveNoise != null)
+        {
+            StartCoroutine(PassiveNoiseRoutine());
+        }
     }
 
     private void FixedUpdate()
@@ -286,5 +296,24 @@ public class EnemyController : MonoBehaviour
         wanderDistance = 5f; // TODO: Fix this to original later
         wanderDirectionChangeCooldown = 2f; // TODO: fix this to original later
 
+    }
+
+    private IEnumerator PassiveNoiseRoutine()
+    {
+        // This loop runs forever as long as the enemy is active.
+        while (true)
+        {
+            // Calculate a random wait time using the min and max values.
+            float randomDelay = UnityEngine.Random.Range(_minPassiveNoiseDelay, _maxPassiveNoiseDelay);
+
+            // Wait for that amount of time.
+            yield return new WaitForSeconds(randomDelay);
+
+            // Make sure the AudioSource exists and isn't already playing a sound.
+            if (_passiveNoise != null && !_passiveNoise.isPlaying)
+            {
+                _passiveNoise.Play();
+            }
+        }
     }
 }

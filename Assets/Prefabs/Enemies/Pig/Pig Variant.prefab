@@ -18,11 +18,11 @@ PrefabInstance:
       objectReference: {fileID: 22100000, guid: 71eee21ad4b5cfe43bba274ff78950b1, type: 2}
     - target: {fileID: 3134057025788562968, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.67775
+      value: 22.71
       objectReference: {fileID: 0}
     - target: {fileID: 3134057025788562968, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22.55
+      value: -34.3
       objectReference: {fileID: 0}
     - target: {fileID: 3134057025788562968, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -68,12 +68,28 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: 71eee21ad4b5cfe43bba274ff78950b1, type: 2}
+    - target: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f4198b32675d074d8d1a8afff1a6d0a, type: 3}
     - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: attackRange
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: _passiveNoise
+      value: 
+      objectReference: {fileID: 5811582562930779524}
+    - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: attackCooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: _maxPassiveNoiseDelay
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: _minPassiveNoiseDelay
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7828921124959604064, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
@@ -92,6 +108,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 930606435952176848}
   m_SourcePrefab: {fileID: 100100000, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+--- !u!82 &5811582562930779524 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+  m_PrefabInstance: {fileID: 1976193969625119660}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7732323622564228868 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8080129172691440808, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}

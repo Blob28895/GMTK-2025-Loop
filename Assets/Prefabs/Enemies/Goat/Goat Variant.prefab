@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3134057025788562968, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.52
+      value: -25.38
       objectReference: {fileID: 0}
     - target: {fileID: 3134057025788562968, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -68,13 +68,33 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: 949c220f5ba516c469b2a07d97bae5b9, type: 2}
+    - target: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 6a04cdd6a42e8c5488e1e62562145f55, type: 3}
+    - target: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: aggroRange
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: _passiveNoise
+      value: 
+      objectReference: {fileID: 8056314799298445464}
+    - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: attackCooldown
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: _maxPassiveNoiseDelay
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213612577233250474, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+      propertyPath: _minPassiveNoiseDelay
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7828921124959604064, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
       propertyPath: m_Sprite
@@ -112,3 +132,8 @@ MonoBehaviour:
   lungeSpeed: 15
   lungeDamage: 10
   attacking: 0
+--- !u!82 &8056314799298445464 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5461241807366118952, guid: 0a7dc0400ee8f024686c340395bcd6d4, type: 3}
+  m_PrefabInstance: {fileID: 2596322836276174512}
+  m_PrefabAsset: {fileID: 0}
