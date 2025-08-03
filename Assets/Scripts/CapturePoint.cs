@@ -178,9 +178,9 @@ public class CapturePoint : MonoBehaviour
 
     private void playAudio(AudioState audioState)
     {
-        if(audioState == AudioState.HIT)
+        if(audioState == AudioState.HIT || audioState == AudioState.CAPTURE)
         {
-            AudioPlayer.PlayClipAtPoint(hitAudio, new Vector3(transform.position.x, transform.position.y, 0), .5f);
+            AudioPlayer.PlayClipAtPoint(hitAudio, new Vector3(transform.position.x, transform.position.y, 0), 1f);
         }
     }
 }
