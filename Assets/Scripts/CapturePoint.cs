@@ -50,6 +50,8 @@ public class CapturePoint : MonoBehaviour
             Destroy(particles, successParticles.totalTime + 3);
         }
 
+        Destroy(circleCollider.gameObject);
+
         Array.ForEach(ropePoints, ropePoint => { Destroy(ropePoint); });
     }
 
@@ -95,41 +97,54 @@ public class CapturePoint : MonoBehaviour
 
     private CircleCollider2D CreateCircleCollider(LineRenderer lineRenderer)
     {
-        Vector3[] positions = new Vector3[lineRenderer.positionCount];
+        int positionCount = lineRenderer.positionCount;
+        Vector3[] positions = new Vector3[positionCount];
         lineRenderer.GetPositions(positions);
 
+        // Ensure all points are in world space for accurate calculation
+        Vector3[] worldPositions = new Vector3[positionCount];
+        if (lineRenderer.useWorldSpace)
+        {
+            // If the line renderer is already using world space, just copy the array
+            Array.Copy(positions, worldPositions, positionCount);
+        }
+        else
+        {
+            // If not, convert each local point to its world space equivalent
+            for (int i = 0; i < positionCount; i++)
+            {
+                worldPositions[i] = lineRenderer.transform.TransformPoint(positions[i]);
+            }
+        }
 
+        // Calculate the center in world space
         Vector3 center = Vector3.zero;
-        foreach (Vector3 pos in positions)
+        foreach (Vector3 pos in worldPositions)
         {
             center += pos;
         }
-        center /= lineRenderer.positionCount;
+        center /= positionCount;
 
-
-        float radiusSq = 0f;
-        foreach (Vector3 pos in positions)
+        // Calculate the radius based on the farthest point from the world space center
+        float radius = 0f;
+        foreach (Vector3 pos in worldPositions)
         {
-            float distSq = (pos - center).sqrMagnitude;
-            if (distSq > radiusSq)
+            float dist = Vector3.Distance(pos, center);
+            if (dist > radius)
             {
-                radiusSq = distSq;
+                radius = dist;
             }
         }
-        float radius = Mathf.Sqrt(radiusSq);
 
-
-        GameObject colliderObj = new GameObject("CircleCollider");
-
-        colliderObj.transform.SetParent(lineRenderer.transform);
-        colliderObj.transform.localPosition = center;
+        // Create a new, unparented GameObject for the collider
+        GameObject colliderObj = new GameObject("CaptureCircleCollider");
+        colliderObj.transform.position = center; // Set its position directly in world space
 
         CircleCollider2D circleCollider = colliderObj.AddComponent<CircleCollider2D>();
         circleCollider.radius = radius;
-
         circleCollider.isTrigger = true;
 
-        Debug.Log($"Collider created at {center} with radius {radius}.");
+        Debug.Log($"Collider created at world position {center} with radius {radius}.");
         return circleCollider;
     }
 
