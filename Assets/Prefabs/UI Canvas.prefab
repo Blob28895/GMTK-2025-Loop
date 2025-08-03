@@ -8753,7 +8753,7 @@ MonoBehaviour:
   _inputReader: {fileID: 11400000, guid: 999d418156ffc224da6955e5afa59ae4, type: 2}
   _pauseBook: {fileID: 6519373631743471192}
   _mainPage: {fileID: 2653773587848721707}
-  _upgradesPage: {fileID: 0}
+  _upgradesPage: {fileID: 326324270745650144}
   _compendiumPages:
   - {fileID: 4407842487922092358}
   - {fileID: 4936314465667983979}
