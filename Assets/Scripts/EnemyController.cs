@@ -212,7 +212,7 @@ public class EnemyController : MonoBehaviour
             _animator.SetFloat("walkingAnimSpeed", 0);
         }
 
-        if (Vector3.Distance(_targetPosition.position, transform.position) < attackRange && cooldownTimer <= 0)
+        if (Vector3.Distance(_targetPosition.position, transform.position) < attackRange && cooldownTimer <= 0 && !isCaptured)
         {
             _movementState = MovementState.attacking;
             _animator.SetTrigger("Attack");

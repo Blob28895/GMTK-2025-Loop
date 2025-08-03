@@ -67,10 +67,12 @@ public class CapturePoint : MonoBehaviour
             {
                 isEnemyInCircle = true;
                 Debug.Log($"Enemy '{enemy.name}' has been hit!");
-                bool isDead = enemy.GetComponent<EnemyController>().Damage(50);
+                EnemyController enemyController = enemy.GetComponent<EnemyController>();
+                bool isDead = enemyController.Damage(50);
 
                 if(isDead)
                 {
+                    enemyController.isCaptured = true;
                     CaptureEnemy(enemy);
                 }
             }
