@@ -22,4 +22,14 @@ public class CapturedEnemyContainer : MonoBehaviour
             enemy._movementState = state;
         }
     }
+
+    public List<EnemyController> getCapturedEnemies()
+    {
+        return _capturedEnemies;
+    }
+
+    public void resetCapturedEnemies()
+    {
+        _capturedEnemies.Clear();
+    }
 }
